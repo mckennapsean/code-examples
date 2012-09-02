@@ -1,3 +1,3 @@
-gcc -lm $1 -o source
+gcc -lm $1.c -o source
 ./source
 rm source

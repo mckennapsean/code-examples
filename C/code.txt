@@ -1,7 +1,7 @@
 can run programs using given bash script
   e.g. program caesarCipher.c
   cd Algorithms
-  ./run.sh caesarCipher.c
+  ./../run.sh caesarCipher
 
 
 Algorithms
