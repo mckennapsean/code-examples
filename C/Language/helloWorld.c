@@ -1,0 +1,8 @@
+// by Sean mcKenna
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+  printf( "Hello, world!\n" );
+}
