@@ -1,0 +1,103 @@
+% by Sean McKenna
+
+% This is a LaTeX version of a laboratory report
+\documentclass[11pt]{article}
+
+% necessary imports
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage[super]{natbib}
+\usepackage{mciteplus}
+
+% page adjustments
+\setlength{\parindent}{0pt}
+\geometry{a4paper}
+
+% expand margins?
+%\addtolength{\oddsidemargin}{-.5in}
+%\addtolength{\evensidemargin}{-.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1in}
+
+% double-spaced?
+%\linespread{2}
+
+%define commands for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% title
+\title{Inert Atmosphere Synthesis: Chromous Acetate}
+\author{Sean McKenna}
+\date{\today}
+
+% begin the document
+\begin{document}
+\maketitle
+
+% header info
+\begin{center}
+\begin{tabular}{lr}
+Dates Performed: March 12, 2012 & Lab Partner: Elizabeth MacGregor\\
+Instructor: Professor Cindy Strong
+\end{tabular}
+\end{center}
+
+
+% describe the experiment's method
+\section{Method}
+Following the provided procedure,\cite{lab} the only change was using $\frac{1}{4}$ of the amounts listed for all reactants. We also utilized a slightly modified but functionally similar apparatus. This caused a few issues with water getting stuck on its way to the frit and also the HgZn also getting stuck along the lip where two glassware pieces connected. The bulk of the reactants made it onto the frit and produced the product.
+
+
+% show the reaction/s
+\section{Reactions}
+\begin{center}
+4CrCl\sub{3} (aq) + HgZn (s) $\rightarrow$ 4CrCl\sub{2} (aq) + HgCl\sub{2} (aq) + ZnCl\sub{2} (aq) \\
+\textit{or} \\
+4Cr\super{3+} + HgZn $\rightarrow$ 4Cr\super{2+} + Hg\super{2+} + Zn\super{2+}   (Jones reduction) \bigskip
+
+\textbf{and} \bigskip
+
+2CrCl\sub{2} (aq) + 4Na(C\sub{2}H\sub{3}O\sub{2}) (aq) + 2H\sub{2}O (l) $\rightarrow$ Cr\sub{2}(C\sub{2}H\sub{3}O\sub{2})\sub{4}$\cdot$2H\sub{2}O (s) + 4NaCl (aq) \\
+\textit{or} \\
+2[chromium(II) chloride] + 4[sodium acetate] + 2H\sub{2}O $\rightarrow$ chromous acetate + 4NaCl \\
+\end{center}
+
+
+% show some calculations
+%\section{Sample Calculations}
+
+
+% show any final results from the lab, tabular form
+\section{Observations \& Results}
+The original Cr\super{3+} solution was green. When reacting with HgZn, the solution turned to a deep blue with a tint of green slowly over time (Cr\super{2+}). Lastly, when Cr\super{2+} was added to the sodium acetate solution, the resulting solution turned a deep red. The final product was also dark, deep red in color (chromous acetate).
+
+
+% discuss what was found, compare to literature, answer specified questions
+%\section{Discussion}
+
+
+
+% answer extra questions
+%\section{Questions}
+
+
+% add the references
+\raggedright
+\bibliographystyle{achemso}
+\bibliography{sources}
+
+
+% and that's a wrap!
+\end{document}

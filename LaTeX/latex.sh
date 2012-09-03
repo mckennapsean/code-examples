@@ -1,0 +1,11 @@
+pdflatex $1
+bibtex $1
+pdflatex $1
+pdflatex $1
+rm *.aux
+rm *.dvi
+rm *.log
+rm *.toc
+rm *.out
+rm *.blg
+rm *.bbl

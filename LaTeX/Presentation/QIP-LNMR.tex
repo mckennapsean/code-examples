@@ -1,0 +1,364 @@
+% by Sean McKenna, Suzannah Wood, and John Klingner
+
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{chemfig}
+\usetheme{Warsaw}
+\title[Quantum Processing with NMR]{Quantum Information Processing\\using Nuclear Magnetic Resonance}
+\author{John Klingner, Sean McKenna, Suzannah Wood}
+\institute{Cornell College}
+%	\date{Decemeber  19, 2011}
+\bibliographystyle{plain}
+\usepackage{subfig}
+\usepackage{wrapfig}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}{Quantum Computing}
+	\begin{itemize}
+	\item Computers - store and process information 
+		\begin{itemize}
+			\item quantum bit (qubit)
+		\end{itemize}
+	\vspace{1em}
+	\item potential for faster algorithms
+	\vspace{1em}
+	\item limited qubits
+	\item nuclear magnetic resonance (NMR) spectroscopy
+	\vspace{1em}
+%	\item Methods of quantum computing
+%		\begin{itemize}
+%		\item ion-trap experiments
+%		\item quantum dots
+%		\item nuclear magnetic resonance (NMR) spectroscopy
+%		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{NMR and Quantum Computing}
+	\begin{itemize}
+	\item Intrinsic angular momentum\cite{QMbook}
+		\begin{itemize}
+		\item fermions: spin $\frac{1}{2}$
+			\begin{itemize}
+			\item e.g. protons, neutrons, electrons
+			\end{itemize}
+		\item magnetic moment: aligns with a magnetic field
+		\end{itemize}
+	\end{itemize}
+	\begin{figure}	
+	\includegraphics[width=0.7\textwidth]{data/magneticfield.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{NMR and Quantum Computing}
+	\begin{itemize}
+	\item Strong super conducting magnet \cite{ABC's}
+	\vspace{1em}
+	\item Sample NMR tube \cite{NMRprep}
+	\vspace{1em}
+	\item Electromagnetic pulse
+	\begin{itemize}
+		\item at resonance, ``tip'' the nucleus
+		\item affected by pulse shapes and widths
+		\item combine to form logic gates 
+	\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Free Induction Decay and Fourier Transform}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{Free Induction Decay}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/FID.png}
+	\end{minipage}
+	\end{figure}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{Fourier Transform}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/FFT.png}
+	\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Quantum System - Sample}	
+	\begin{itemize}	
+	\item Chloroform: $^{13}$C isotope ($^{13}$CHCl$_{3}$)
+		\begin{itemize}
+		\item $^{13}$C: spin $\frac{1}{2}$
+		\item $^{1}$H: spin $\frac{1}{2}$
+		\vspace{1em}
+		\chemfig{\llap{${}^{13}$}C(-[5]Cl)(-[2]H)(<[:-70]Cl)(<:[:-20]Cl)}
+		\vspace{1em}
+		\item spins align within the magnetic field 
+			\begin{itemize}
+			\item four possible states
+			\end{itemize}
+		\end{itemize}
+		\item two-qubit system
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{``Pure'' States}
+	\begin{itemize}
+	\item semi-effective ``pure'' state: 0 K
+	\vspace{1em}
+	\item temporal averaging: add results to cancel out spins
+	\begin{itemize}
+		\item two qubits results in three experiments
+	\end{itemize}
+	\vspace{1em}
+	\item four input spin states
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Thermal vs. ``Pure'' State}
+	\begin{figure}[htb]
+	\begin{minipage}{0.8\textwidth}
+		\begin{centering}
+	\begin{figure}
+		\subfloat{\includegraphics[height=0.4\textheight]{data/00prepT.png}}
+		\\
+		\subfloat{\includegraphics[height=0.4\textheight]{data/00prep.png}}
+	\end{figure}
+		\end{centering}
+	\end{minipage}%
+	\begin{minipage}[t]{0.2\textwidth}
+	\begin{centering}
+	\begin{tabular}{c | c}
+		Qubits & Spin \\
+		\hline
+		00 & $\uparrow \uparrow$ \\
+		01 & $\uparrow \downarrow$ \\
+		10 & $\downarrow \uparrow$ \\
+		11 & $\downarrow \downarrow$ \\
+	\end{tabular}
+	\end{centering}
+	\end{minipage}%
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Pulse Sequences}
+	\begin{itemize}
+	\item translation of charts from literature
+	\begin{itemize}
+		\item hardware \& software limitations
+	\end{itemize}
+	\item sequences may vary
+	\item pulse sequences for temporal averaging\cite{bigdaddy}
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=0.7\textwidth]{data/bigdaddy.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Pulse Axes}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{x90 Pulse}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/x-pulse.png}
+	\end{minipage}
+	\end{figure}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{y90 Pulse}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/y-pulse.png}
+	\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Preparation of Four States}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{00 | $\uparrow \uparrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/00prep.png}
+	\end{minipage}
+	\end{figure}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{01 | $\uparrow \downarrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/01prep.png}
+	\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Preparation of Four States}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{00 | $\uparrow \uparrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/00prep.png}
+	\end{minipage}
+	\end{figure}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{10 | $\downarrow \uparrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/10prep.png}
+	\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Preparation of Four States}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{00 | $\uparrow \uparrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/00prep.png}
+	\end{minipage}
+	\end{figure}
+	\begin{figure}
+	\begin{minipage}[c]{.2\textwidth}
+		\caption*{11 | $\downarrow \downarrow$}
+	\end{minipage}%
+	\begin{minipage}[c]{.8\textwidth}
+		\includegraphics[height=0.4\textheight]{data/11prep.png}
+	\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Preparation of Four States}
+	\vspace{-2em}
+	\begin{figure}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/00prep.png}}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/01prep.png}}
+		\\
+		\subfloat{\includegraphics[height=0.3\textheight]{data/10prep.png}}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/11prep.png}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{C-Not Gate}
+	\begin{itemize}
+	\item with initial states, implemented controlled-not (C-Not) gate \cite{cnot}
+	\begin{itemize}
+		\item flips B when A = 1
+	\end{itemize}
+	\end{itemize}
+	\begin{figure}[htb]
+	\begin{minipage}{0.3\textwidth}
+		\begin{centering}
+	\begin{figure}
+	\begin{tabular}{c c | c c}
+	\multicolumn{2}{c|}{In} & \multicolumn{2}{|c}{Out} \\
+	A & B & A & B \\
+	\hline
+	0 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 1 \\
+	1 & 0 & 1 & 1 \\
+	1 & 1 & 1 & 0 \\
+	\end{tabular}
+	\caption*{Truth Table for C-Not Gate}
+	\end{figure}
+		\end{centering}
+	\end{minipage}%
+	\begin{minipage}[t]{0.7\textwidth}
+	\begin{centering}
+		\begin{figure}
+	\includegraphics[width=0.7\textwidth]{data/controllednot.png}
+	\end{figure}
+	\end{centering}
+	\end{minipage}%
+	\end{figure}
+\end{frame}
+
+\begin{frame}{C-Not Gate: Results}
+	\vspace{-2em}
+	\begin{figure}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/00cNot.png}}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/01cNot.png}}
+		\\
+		\subfloat{\includegraphics[height=0.3\textheight]{data/10cNot.png}}
+		\subfloat{\includegraphics[height=0.3\textheight]{data/11cNot.png}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Conclusion}
+	\begin{itemize}
+	\item demonstrated quantum NMR
+	\item prepared four initial states
+	\item nearly completed a logic gate
+	\vspace{1em}
+	\item future work
+		\begin{itemize}
+		\item understand, create, and simplify pulse sequences
+		\item run quantum algorithms
+		\item expand beyond two qubits
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+\bibliography{bibfileQM}
+\end{frame}
+
+\begin{frame}{Full Size FID}
+	\includegraphics[width=1\textwidth]{data/FID.png}
+\end{frame}
+
+\begin{frame}{Full Size FFT}
+	\includegraphics[width=1\textwidth]{data/FFT.png}
+\end{frame}
+
+\begin{frame}{Full Size x90}
+	\includegraphics[width=1\textwidth]{data/x-pulse.png}
+\end{frame}
+
+\begin{frame}{Full Size y90}
+	\includegraphics[width=1\textwidth]{data/y-pulse.png}
+\end{frame}
+
+\begin{frame}{Full Size 00prep}
+	\includegraphics[width=1\textwidth]{data/00prep.png}
+\end{frame}
+
+\begin{frame}{Full Size 01prep}
+	\includegraphics[width=1\textwidth]{data/01prep.png}
+\end{frame}
+
+\begin{frame}{Full Size 10prep}
+	\includegraphics[width=1\textwidth]{data/10prep.png}
+\end{frame}
+
+\begin{frame}{Full Size 11prep}
+	\includegraphics[width=1\textwidth]{data/11prep.png}
+\end{frame}
+
+\begin{frame}{Full Size 00cNot}
+	\includegraphics[width=1\textwidth]{data/00cNot.png}
+\end{frame}
+
+\begin{frame}{Full Size 01cNot}
+	\includegraphics[width=1\textwidth]{data/01cNot.png}
+\end{frame}
+
+\begin{frame}{Full Size 10cNot}
+	\includegraphics[width=1\textwidth]{data/10cNot.png}
+\end{frame}
+
+\begin{frame}{Full Size 11cNot}
+	\includegraphics[width=1\textwidth]{data/11cNot.png}
+\end{frame}
+
+\end{document}

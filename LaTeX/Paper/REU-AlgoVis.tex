@@ -1,0 +1,376 @@
+% by Sean McKenna, David Adrian, and Nancy Decker
+
+% Their paper relates to a summer research project at UW-Oshkosh on
+% integrating algorithm visualizations into an online community and
+% hypertext lessons.
+% Last Modified: July 26th, 2010
+
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
+% LaTeX2e document class file for Conference Proceedings submissions.
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) Page numbering
+% ---------------------------------------------------------------------------------------------------------------
+% It is an example which *does* use the .bib file (from which the .bbl file
+% is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission,
+% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+
+\documentclass{acm_proc_article-sp}
+\usepackage{graphicx}
+
+
+\begin{document}
+\title{Envisioning an Online Learning Environment:
+\\ Integrating Algorithm Visualizations with JGIVE}
+
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+David Adrian\\
+       \affaddr{The College of New Jersey}\\
+       \affaddr{2000 Pennington Road}\\
+       \affaddr{Ewing, NJ}\\
+       \email{adrian3@tcnj.edu}
+% 2nd. author
+\alignauthor
+Nancy Decker\\
+       \affaddr{St. Lawrence University}\\
+       \affaddr{23 Romoda Drive}\\
+       \affaddr{Canton, NY}\\
+       \email{nkdeck07@stlawu.edu}
+% 3rd. author
+\alignauthor
+Sean McKenna\\
+       \affaddr{Cornell College}\\
+       \affaddr{810 Commons Circle 947}\\
+       \affaddr{Mt. Vernon, IA}\\
+       \email{smckenna12@cornellcollege.edu}
+% use '\and' if you need 'another row' of author names
+}
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+\date{28 July 2010}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+\begin{abstract}
+
+Our project, under the guidelines of the University of Wisconsin-Oshkosh 2010 Research Experience for Undergraduates (REU), aims to design a community-based hypertext lesson collaboration website, named JGIVE. Using open-source projects such as Drupal and JHAV\'{E}, we constructed a website allowing for the creation, editing, and sharing of hypertext lessons which utilize algorithm visualizations (AVs) with quizzes. The project's focus is on supporting an active educator-student relation and creating an easy-to-use website which increases the use of AVs.
+
+
+\end{abstract}
+
+% Categories with the (minimum) three required fields and an additional fourth optional field
+\category{K.3.1}{Computers and Education}{Computer Uses in Education}[Computer-assisted Instruction]
+\category{K.3.2}{Computers and Education}{Computer and Information Science Education}[Computer science education]
+
+\terms{Algorithm}
+
+\keywords{Online Educational Community, Hypertextbooks, Algorithm Visualization} % NOT required for Proceedings
+
+\section{Introduction}
+The goal of this project is to combine the long-standing computer science teaching tool, the algorithm visualization, with hypertextbooks, educational resources delivered via the web, in order to provide a new teaching interaction between educators and students. To host this interaction, JGIVE (Java-based Gateway for Instruction using Visualizations in Education) was developed. The site was given the name JGIVE because its design revolves around the sharing of hypertext lessons which use algorithm visualizations from the JHAV\'{E} project \cite{jhave}. To do this, the site is built on top of Drupal, a content management framework \cite{drupal}. A typical hypertext lesson on JGIVE contains an algorithm visualization, explanatory text, images, and links to external sources. The site attempts to provide a simple environment for educators to utilize hypertext lessons in their curricula while simultaneously being easy enough for students to use in understanding computer science concepts.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{JGIVE.png}
+  \end{center}
+  \caption{JGIVE Site}
+\end{figure}
+
+\subsection{Algorithm visualization}
+Algorithm visualizations (AVs) have been used for years, beginning with the 1981 video ``Sorting Out Sorting," to teach concepts of computer science to students. Since then, projects such as Balsa \cite{balsa} and JHAV\'{E} \cite{jhave} have been created to make developing AVs easier and allow AVs to be more effective in the classroom.  The issue of whether AVs are an effective learning tool is still a subject of research, but a variety of studies point to AVs being effective when engagement expands beyond passive viewing \cite{effectiveness}.
+
+While some of these systems have made AVs more prevalent in computer science education, it is troubling to note that a majority of professors and students still do not use AVs \cite{taxonomy}. Professors commonly state that lack of use is a result of difficult integration with current textbooks \cite{ineducation} and the time it takes to effectively incorporate AVs into a course \cite{ineducation}.  This also relates to the issue that many AVs do not serve as effective learning materials \cite{avwiki}, which the AlgoViz wiki \cite{algoviz} is beginning to solve by collecting and cataloging different AVs and rating them by effectiveness.
+
+\subsection{Hypertextbooks}
+\label{Hypertextbooks}
+Hypertextbooks are slowly becoming a trend in the world of online education. One of the largest hindrances to these resources is that there is no clear definition of what a hypertextbook is. Hypertextbooks are often ``teaching and learning resource[s] that [are] delivered via standard Web browsers" \cite{authoring}. Another project aims their hypertextbook to eventually be a stand-alone replacement for a regular textbook in a computer science introductory course \cite{promise}. These resources should also be easily accessible on the web for any particular subject \cite{fortheweb}. Hypertextbooks have been proposed as a solution to the aforementioned difficulties with using AVs in the classroom \cite{fortheweb,promise,vizcosh,prototype}.
+
+Hypertextbooks, however, are lengthier materials than the lessons that appear on JGIVE. Hypertextbooks are typically designed to be multiple chapters long and contain an in-depth discussion, often about multiple topics. JGIVE has what we have decided to dub ``hypertext lessons." These hypertext lessons are shorter and usually about one topic. This makes it much easier to adapt a hypertext lesson into a course and assign it to students. It is also easier to assign and collect quiz results for one or two quizzes,  rather than the dozen or so a hypertextbook may contain. By combining the benefits of using hypertextbooks with the effectiveness of algorithm visualizations, hypertext lessons on JGIVE can be more versatile for testing in the classroom than previously existing online educational content. With searching, rating, and commenting on lessons, educators can quickly locate the lessons on the site that best suite their needs. A professor only needs to find a useful hypertext lesson before they can assign it to their students or use it during a lecture.
+
+\subsection{Drupal and related work}
+In order to accomplish these goals, we chose to use Drupal to build our website. Drupal is an open source project designed for building large community-based sites. Moodle \cite{moodle}, a course management system, did not fit our needs. Moodle is geared for creating content for a single class, not necessarily accessible to everyone. Using Drupal allows content creation to expand beyond the limited scope of classes.
+
+Designed similarly to the goals of this project, an algorithm visualization module for Moodle already exists \cite{moodlemodule}. Using Moodle, Guido R\"o\ss ling designed a project to create what other researchers have named a ``Visualization-based Computer Science Hypertextbook", or ``VizCoSH" \cite{vizcosh}. With several significant similarities between the design of his project and ours, it is important to note the differences in the concept and the goals of our site.
+
+As discussed in Section \ref{Hypertextbooks}, JGIVE contains hypertext lessons rather than hypertextbooks, which is what R\"o\ss ling's project focuses on. The core difference between these projects is assigning a hypertext lesson as a short-term assignment versus using a hypertextbook as a long-term learning tool. R\"o\ss ling's work does not focus on providing short lessons assignable by professors to their students and instead focuses on building a collection of VizCoSHs through Moodle. 
+
+In addition, while several elements regarding R\"o\ss ling's hypertextbooks and JGIVE's hypertext lessons are similar, such as comments and ratings, they are implemented in different ways. For example, R\"o\ss ling's hypertextbooks are split up into small sections where each are flaggable and commentable. Hypertext lessons, on the other hand, consist of one page each and contain just one set of comments and ratings, which is simpler.
+
+\section{Concept}
+The goal of JGIVE is for AVs to be easily integrated into hypertext lessons and enable the community to collaborate on those lessons. This creates a constantly growing environment where new AVs and lessons can be easily used by educators and students.
+
+\subsection{Open community}
+Rather than distinguishing between users, our concept is more open. Any user should be able to view lessons, take quizzes as students, create lessons as educators, and even submit new algorithm visualizations as developers. By not separating users into groups, it makes the user base easier to manage and more effective. With multiple roles in place, one user can contribute and interact as different roles, creating an open community. This is important so that teachers can still be learners, and students can still be educators. Furthermore, it leads to another important feature: sharing.
+
+\subsection{Collaboration and sharing}
+\label{Collaboration and sharing}
+In concept, JGIVE is a collaborative environment in addition to being the host of a collection of hypertext lessons. One goal of the project is to create a collaboration engine for lesson creation. This means that authors of hypertext lessons will not only be able to view previously existing lessons but also to modify them for their own needs, rather than being limited to a static set of lessons, as in regular textbooks. For example, if a professor really likes a lesson about Quick Sort but finds the lesson is missing a discussion regarding complexity of that sorting algorithm, they can add such a discussion to the lesson themselves before assigning it to their class. In this model, a new lesson might be created that gives credit to the original author of the lesson. Such models for collaboration will be discussed further in Section \ref{Future Development}.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{Sharing_Set_Diagram.png}
+  \end{center}
+  \caption{Sharing Set Diagram (dashed lines represent future features)}
+  \label{fig:Sharing Set Diagram}
+\end{figure}
+
+While collaboration is an important facet of sharing on JGIVE, the concept of sharing encompasses a few more elements of the site as well. Figure \ref{fig:Sharing Set Diagram} depicts these elements as they fall under the larger umbrella of sharing. This umbrella of sharing indicates that everything inside it is shared among all users of the site. For example, lessons are not limited to one author, class, or university. Also, comments and ratings are shared, features that will be discussed in Section \ref{Existing Drupal modules}.
+
+JGIVE also makes it easy for students to share their quiz scores with their professors. Instead of a professor needing to create a class roster, he or she can give students the class name or e-mail of the professor, either of which can be used to search for the class. Then, as students enroll in the class, the class roster builds itself. This allows the professor the benefit of being able to monitor students easily while drastically reducing the time needed to assign lessons.
+
+Finally, AVs and quizzes are ``shared", but in a slightly different sense. Algorithm visualizations, ideally, would be available for viewing by developers (discussed in the next section). This creates an environment in which aspiring algorithm visualization developers can look at existing AVs and get new ideas about creating their own.
+
+Quizzes fall under two categories. The first category of quizzes can be referrred to as ``AV quizzes." In the case of AV systems such as JHAV\'{E}, these are built into the AV. The second category of quizzes refers to quizzes inserted directly in a lesson on the JGIVE site. These can be referred to as ``lesson quizzes." These lesson quizzes allow authors to customize each lesson even further as they would no longer be limited to the static quiz that comes prepackaged with each AV (as is the case with JHAV\'{E}). This means that not only can authors collaborate on the content of lessons, but they can also collaborate on quizzes attached to a lesson, for example, weeding out bad questions and coming up with newer, better ones. Note that lesson quizzes are not currently supported by JGIVE (while AV quizzes are).
+
+\subsection{Developing AVs}
+Our site currently supports insertion of algorithm visualizations hosted by the JHAV\'{E} project \cite{jhave} into hypertext lessons. In concept, AVs from other sources would be usable in the same fashion, such as those listed in the AlgoViz wiki \cite{algoviz}. Also conceptualized is a developer AV submission module which would extend the site to allow developers of various AVs to submit their own creations to be included among our current database of AVs. This would promote community creation of AVs and enhance the content in the lesson catalog. Methods of accomplishing this functionality will be discussed in Section \ref{Future Development - AVs}.
+
+\subsection{Ease of use}
+Primarily, the goal of the site is to make it easier for educators and students to use AVs in a variety of contexts. By providing hypertext lessons with algorithm visualizations built in, teachers can search for and utilize the prepared lessons without spending much time. A teacher can find a lesson they want and assign it to a class with the click of a button.  The students then receive the assignment, read the lesson, and take any quizzes by following the links attached to the AV buttons. Their scores are automatically reported back to the site, thus being accessible by the professor. The lessons are conceptualized with the ability to edit previously existing lessons; educators can instead modify lessons for their own needs in their courses. This enhances the flexibility in our concept, allowing anyone to effectively utilize the site.
+
+\section{Design}
+One of the most vital elements of this design, other than ensuring that future development of the site will be easy to perform, is the consideration given to the needs of the different roles of users. Educators need the ability to perform certain tasks, as do students. These tasks need to be related and both user roles should be able to communicate. Other roles had to be considered as well, even the role of a user that isn't logged in. Such users, regardless of having an account on the site, can still access the lesson catalog. This enables visitors to view what is in the catalog, building interest in these users to create their own account. In addition, lessons are provided for anyone to use, meaning users can read a lesson and share it by its URL. Concerning the specific needs of the different roles for a user, we primarily considered what features are desired by educators, students, and developers.
+
+Referring to Figure \ref{fig:Concept Map}, this shows the steps taken from concept to our design. The ovals at top contain the key ideas of our concept. This section will discuss the items in the light gray boxes, which indicate parts of our design which are realized in JGIVE's current implementation.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{Concept_Map.png}
+  \end{center}
+  \caption{Concept-Design Map}
+  \label{fig:Concept Map}
+\end{figure}
+
+\subsection{Educator workflow}
+For educators, the main goal is to reduce the amount of time it takes and decrease the difficulty of incorporating lessons into their curriculum. Without forcing an educator into creating an account on the site, anyone can access the lesson catalog (browseable by category and rating, searchable by author). A professor, if interested in testing the site before getting involved with its more complex features, can ``assign" a lesson via its URL informally.
+
+However, creating an account would open up more functionality. This functionality, as it interacts with other elements on the site, is detailed in Figure \ref{fig:Educators Work Flow}. With an account, a professor can create a class, assign a lesson to that class, and retrieve the quiz scores of students in the class. Creating a class is as simple as typing a unique class name and clicking submit. The responsibility to enroll is then placed on the student; the educator need not do any additional work. This design addresses the concern that using AVs in the classroom may take too long \cite{ineducation}.
+
+A professor can then assign a lesson to a class by clicking a link that appears on each lesson. The professor chooses which class and when the deadline is for the assignment. After this, the assignment's details are made available to the students, allowing the professor to see student progress and scores. Assigning lessons is designed to be simple and effective, a process that takes only a few moments once a professor has selected a lesson.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{Educators_Work_Flow.png}
+  \end{center}
+  \caption{Educator Workflow}
+  \label{fig:Educators Work Flow}
+\end{figure}
+
+An educator also has the ability to create their own lesson. AVs can be added to the lesson easily, eliminating another concern of professors, which is finding suitable AVs. \cite{ineducation,avwiki} Since all of the available AVs are automatically presented in a drop-down menu, it is easy not only to add an AV matching the subject of the lesson but also to add related AVs without searching for them. How these AVs get onto JGIVE will be discussed in Section \ref{Developer workflow}.
+
+By publishing a lesson, it is automatically available in the lesson catalog, which means other educators can view and use that lesson. Note that only the most recent copy of a lesson appears on JGIVE. This means that if a lesson is assigned to a class and then changed later, these changes will percolate to every instance of the lesson. While the concept of collaboration is not implemented on the site, an author of a lesson still retains the ability to edit that lesson.
+
+\subsection{Student workflow}
+The site is designed to be just as easy for students to use as it is for professors. When they first arrive at the site, students can look at the lesson catalog without being enrolled in a class. This allows a student to study on their own without any classes or assignments. With an account, a student is then able to access several features, which are detailed in Figure \ref{fig:Student Work Flow}. Once a student is enrolled in a class, lessons assigned to students appear on the site as a notification box, reminding the student that they have work to complete.
+
+Students can then view their assigned lessons, which may contain links to AVs. A button is created for all AVs inside a lesson. This button links to the AV and maybe an additional quiz, which the student can then take. The score that a student gets on a quiz is automatically sent to their class where it can be viewed by the instructor. Grading students provides them with an incentive to complete their work of understanding the algorithms in the lesson and also encourages a higher level of active engagement to assist in this understanding \cite{jhave}.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{Students_Work_Flow.png}
+  \end{center}
+  \caption{Student Workflow}
+  \label{fig:Student Work Flow}
+\end{figure}
+
+\subsection{Developer workflow}
+\label{Developer workflow}
+Developers are the final role for a user incorporated into our concept. Currently, however, few of the conceptualized features outlined in previous sections for developers ended up being implemented. AVs currently use links to JHAV\'{E} through Java Web Start and further development could increase this functionality such that different sources of AVs can be used in a similar way. This would mean that AVs could even be submitted directly to the site through a form, similar to the way the AlgoViz wiki handles AV submission.
+
+\section{Implementation}
+With site design established, implementing that design was the next challenge. In order to construct everything needed for the site, several existing open-source projects were used as a starting point. Mainly, to understand what work was done, a background on these technologies must first be presented.
+
+\subsection{Developing for Drupal 6.x}
+Drupal uses what it calls ``nodes" to handle content on a web site \cite{drupal}. A ``node" is the fundamental building block for a specific type of content on a Drupal site. JGIVE contains a node type called ``algo\_lesson", the template for every hypertext lesson on the site. Any lesson utilizes special tables in the database which store the most recent version of a lesson's content. Drupal's tables have the ability to hold copies of each revision as well. The ability to manipulate revisions, however, is not yet in the implementation of the site.
+
+All development for Drupal requires writing modules (akin to plugins) in the server-side scripting language PHP. The learning curve for Drupal is steep; this project required background research into how Drupal works before building new features in Drupal. Not all features are coded from scratch, however, as the Drupal community has produced several modules that JGIVE now uses.
+
+\subsection{Existing Drupal modules}
+\label{Existing Drupal modules}
+Lessons on JGIVE can receive ratings and comments from logged-in users. Functionality for ratings is provided by the FiveStar and Voting modules \cite{drupal}. High ratings highlight lessons users have deemed most effective and create another way to find useful lessons in the catalog. Commenting is a feature built into Drupal. Allowing users to comment on lessons increases communication and collaboration between users and leaves space for individuals to review and provide feedback on specific lessons. For example, a professor might comment on a lesson saying that it was effective in their introductory computer science course and also comment on a similar lesson that it was not appropriate for their same introductory course. In this way, comments are another tool for users to find lessons that are ideal for their needs.
+
+In addition to FiveStar, JGIVE makes use of two other existing modules specifically for lesson creation. These are the CKEditor module and the IMCE module \cite{drupal}. The CKEditor module provides the What You See Is What You Get (WYSIWYG) style editor in JGIVE's lesson creation module. This editor allows users to type in HTML without knowing how, by providing an interface similar to Microsoft Word. IMCE is used for image uploading, and it allows users to upload images to JGIVE for use in their lessons.
+
+\subsection{Building new features onto Drupal}
+Because the site is closely integrated with the JHAV\'{E} project, the site reports quiz scores as per the JHAV\'{E} application's methodology. In this section, ``AV quizzes" are being discussed (refer to Section \ref{Collaboration and sharing}). Currently, when users take a JHAV\'{E} quiz (AV quiz), the score is directly reported back to the site's MySQL database.
+
+This is accomplished using code on JGIVE that transmits necessary information to JHAV\'{E}. A PHP script with parameters passed to it generates a Java Network Launching Protocol (JNLP) file. The user then downloads and runs this file to launch the application out of the web browser. This process is also referred to as Java Web Start. From this link, JHAV\'{E} starts up using variables like the user's email and the algorithm to be visualized, directing the program to the correct AV.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=200px]{Add_AV.png}
+  \end{center}
+  \caption{Add Algorithm Visualization field}
+\end{figure}
+
+The catch with this implementation is that in order for other projects to use quizzes in their AVs on our site, some additional code would have to be written. This will be discussed further in Section \ref{Future Development}.
+
+In addition to tying JGIVE into the JHAV\'{E} project, several new modules were written by our group to add necessary functionality to Drupal. These modules are listed in Table \ref{tbl:Modules developed for Drupal}. Lesson creation and editing is supported by the \emph{algo\_lesson} module, which creates a template or node type for new lessons. The \emph{algorithm\_visualization} module allows AVs to be inserted as links in lessons. The \emph{lesson\_catalog} module provides a page for browsing created lessons. The \emph{class\_hub}, \emph{student\_hub}, \emph{educators\_hub}, and \emph{assignment\_notifier} modules collectively provide class functionality, allowing educators to create classes, students to enroll in them, etc. Finally, the \emph{av\_devs} module is a placeholder module for what would eventually be the AV catalog and AV submission module.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+\bf{Module} & \bf{Description} \\ \hline
+algo\_lesson & Node content type \\
+algorithm\_visualization & Inserts links to AVs \\
+assignment\_notifier & Notification block \\
+av\_devs &  Lists JHAV\'{E} AVs \\
+class\_hub & Manage classes \\
+educators\_hub & Class hub for educators \\
+lesson\_catalog & Lists lessons \\
+student\_hub & Class hub for students \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Modules developed for Drupal}
+\label{tbl:Modules developed for Drupal}
+\end{table}
+
+\subsection{Integrating existing AV projects}
+As previously mentioned, the site borrows from JHAV\'{E} its current database of algorithm visualizations and its quiz taking and score reporting features. In addition to this, the site is modeled loosely off of the AlgoViz wiki \cite{algoviz}. Borrowing its categorization system for AVs and utilizing it for all hypertext lessons is a step towards this imitation. The purpose of this integration is to connect AV development and deployment, meaning that, in the ideal system, a new AV submitted to the AlgoViz Wiki could use the same categories both on their site and on ours, allowing for immediate crossover between sites. Hopefully, this would mean that new AVs on AlgoViz would automatically be made available to authors of hypertext lessons on our site, category intact.
+
+\section{Future Testing}
+\label{Future Testing}
+In order to gauge the effectiveness of our site, we suggest in this section several measurements. Being realistic, testing of JGIVE should focus less on objective studies and more on the subjective aspects. Until the site receives positive feedback in each of the following factors, it cannot be deemed truly effective. Measuring these factors can be done through surveys, questionnaires, or general feedback from users testing out the site in multiple different contexts.
+
+\subsection{Ease of Use}
+``Ease of use" is a imprecise term. For some people, the site may be very easy to use, but for others this may not be the case. However, surveys and questionnaires would yield user feedback on how easy they found the site to use. ``Use," in this context, would refer mostly to users using the functionality of the site such as educators assigning hypertext lessons to their students and collecting quiz scores. However, other experiences could be measured as well. These surveys could directly lead to future improvements to the site in addition to continued study of the site.
+
+It is also important to consider whether it is easy to use the lessons themselves, both in and out of the classroom. In this context, it is a matter of measuring how effective the facilities for deploying lessons are and how easy it is to work with lessons in the context of the website. Studies could also separate the opinions of educators and students. Different users will have different opinions of these factors, therefore separating feedback by user role is essential in effectively studying the site.
+
+\subsection{Functionality}
+The site provides a number of different features such as score reporting, viewing lessons, creating lessons, editing lessons, assigning lessons, creating classes, AV insertion, enrolling in classes, rating lessons, and assignment notification. As is true of any feature, there are multiple ways to provide a feature to users. In some cases, like score reporting, an educator may expect quiz scores to be reported in a different way, for example, as a ratio of questions correct to the total number (compared to the current system which delivers scores as a percentage out of one hundred). Some educators would not be happy with our system, and measuring these needs is important to growth of the site.
+
+Getting feedback from users is critical in improving, adding, and removing features of the site. The basic question of these surveys should be: is this how you want a given feature to be implemented? Ideally, all users would agree on these features. Of course, people will disagree and decisions will need to be made in order to satisfy the majority. Consideration must be taken on a user role by user role basis to determine the best course of action.
+
+\subsection{Popularity and Usage}
+There are more objective ways to measure the success of JGIVE. As more page hits occur, for example, the site must be becoming more popular. Measurements taken over time, like the number of lessons, unique authors, or classes, would also show the expansion and growth of the site. While it is important to get feedback on users' experiences with the site, hard numbers can be more important in determining the life or death of the site as well as providing a basis with which to sell the idea of JGIVE to interested parties. Without such measurements, the site's overall effectiveness might be impossible to gauge.
+
+\section{Future Development}
+\label{Future Development}
+As is evident with the differences between our concept and implementation, this project has been created with the intent that it be continued. These differences, again, are shown in Figure \ref{fig:Concept Map}. Some features, such as expanding collaboration and opening up more compatibility with different AV systems, have yet to be implemented. The site is meant, at this stage, to be a proof of concept, showing that further development towards an online computer science education community could prove worthwhile and help in effectively teaching CS concepts. One of the challenges in future implementation will be sustaining ease of use, that is, ensuring that adding features does not detract from the current design, which is focused on ease of use.
+
+\subsection{Additional Features}
+In addition to the functionality JGIVE currently provides and apart from improvements on that functionality, some new ideas emerged as things we thought JGIVE should have. These ideas stemmed from existing Drupal community-made modules like the Quiz, Gradebook, and Bibliography modules. By rewriting portions of our code for the site, custom quizzes could be created on the site by educators. In addition, AV scores would then be saved in the Quiz module's database tables. With a Gradebook module, scores could be consolidated, making them easier to access by educators. JGIVE would also use existing features from Gradebook like exporting grades in easier-to-manage formats, like an Excel spreadsheet. And by adding better bibliography support by the Bibliography module, educators creating lessons could copy their references onto the site, for example by importing a bibtex file.
+
+\subsection{Further integration with JHAV\'{E}}
+Within the scope of the JHAV\'{E} project, quizzes are currently scored by the program itself and are reported in terms of numbers back to the site. Future work may enable more dynamic questions to be available in the visualizations, such as open-ended questions that a professor may receive the student answers and can score them, instead of having an automatic score interpreter and reporter.  This work would require changes to be made in both the site and the program to effectively utilize more types of quizzes in an AV.
+
+\subsection{AVs}
+\label{Future Development - AVs}
+Currently, AVs from the JHAV\'{E} project are supported, and visualizations are opened via Java Web Start. Ideally, the site would further support embedding of applets for viewing algorithms on the page without requiring an external window. This is another feature that enables users to easily utilize AVs \cite{fortheweb}. For existing AVs, any developer should be able to submit technical details about their project or animation and add links or embedded applets for their visualizations. Furthermore, a catalog of these AVs, including links and information for the system to use them in lessons, would be maintained on the site.
+
+Our concept for further integration would require a developer to pick a type of AV (Java Webstart, Applet, Flash etc.), select some features their AV contains such as quiz mode and the ability of their AV to send quiz scores back in a uniform format. This unfortunately will limit some AVs that have already been developed with a quiz mode, but do not have scores sent in this format. Unfortunately, this would allow for AVs to not contain a quiz, reducing the functionality of the site. However the expansion of the AV library should out-weigh the loss of quiz mode in some visualizations.
+
+\subsection{Further integration with the AlgoViz wiki}
+In the long term, the site should merge its catalog of AVs with the AlgoViz wiki, or ideally solely use the AlgoViz wiki for coordinating the insertion of algorithm visualizations into lessons. This could even mean that the two sites would ultimately be joined together into one website, or else the two sites would just need to communicate information on the catalog of AVs. Before this phase of the concept can be enacted, testing of the current site and its effectiveness and usefullness should be conducted. This was discussed in Section \ref{Future Testing}. Also, merging any two projects requires a lot of effort and time to merge the code and ideas together into a larger site.
+
+\subsection{Privacy and security}
+Because JGIVE is a proof of concept site, little development time was devoted to security and privacy concerns. Therefore, these concerns should be kept in mind when the JGIVE project continues.
+
+\subsubsection{Scores}
+Currently, quiz scores are not encrypted before they are stored in the database. This is definitely an issue that should be resolved before JGIVE is deployed for real world use. In addition, any user in a class that has been assigned a lesson is allowing the owner of that class to view any relevant quiz scores that user generates. This is a problem because users may not realize this and unwillingly allow strangers to access their quiz scores.
+
+\subsubsection{Permissions}
+Consideration should be given to allowing any user to enroll in classes. Due to the issue of unwanted users enrolling in classes, it may be necessary to implement an approval system. This means that an educator would have to approve users before they are officially enrolled in a class. To differentiate from the standard, open classes, these classes would be known as ``private classes" and appropriate settings for creating them are provided to educators. Private classes do not currently exist on JGIVE, but should be considered as a way to solve the issue of unwanted enrollment.
+
+\subsubsection{Other security concerns}
+JGIVE primarily uses HTML GET parameters to communicate data in PHP during a user's session on the site. Anyone familiar with these GET parameters will know that while they are easier to work with, they are not nearly as secure as POST parameters, which are hidden from the user. While several countermeasures have already been taken on JGIVE to prevent unwanted activities by users, using POST would provide for a more secure environment.
+
+There is also a small issue with assignments in general. Since JGIVE's lessons are, in concept, editable by anyone, this means that, in the future, a student, or any other user for that matter, could edit a lesson that has been assigned to a class. For example, a student may remove a quiz from an assignment, which would constitute unwanted behavior and should be addressed in some way. A simple way to handle this is to create every version of a lesson as a page, and when an educator assigns a lesson, no matter what changes occur, the version of the lesson assigned will always be the one students must complete.
+
+\subsection{Collaboration}
+Collaboration is currently supported, but only on a very basic level. Sharing lessons in the catalog or keeping them privately saved are both options available to authors. Anyone can edit a lesson they have created, but no interaction between authors and lessons is currently supported, meaning things such as merging lessons into new lessons, splitting lessons into smaller lessons, or copying lessons for your own edits are not yet possible. One important reason for not implementing these features is simply that many people tend to disagree on the best format for collaboration. For example, revision control systems vary in how they store and split revisions, like the projects SVN and Git. Collaboration would have to handle revisions on top of many other fine details, like when someone forks off a new project or reverting back to older revisions or full-text revisions versus small spelling error fixes. Different projects implement this in different ways, and a whole area of research could be devoted toward figuring out the most effective collaborative environment for this site or any site.
+
+A method for collaboration that emerged in our discussion of site concept is the ability of a professor to take a lesson, edit it as per their own needs, and then be able to assign that lesson to their class, giving credit to the original author of the lesson. Another method would be to have the lessons editable by anyone, credit being given to the original author and all collaborators along the way, and all revisions kept on the site. Drupal already has something similar to this functionality partially implemented because node edits are saved as revisions, though currently those revisions are only accessible to site administrators.
+
+Yet another alternative is to allow the addition of supplementary materials to existing lessons. In this model, educators would stack on top of existing lessons their own text, quizzes, examples, etc. This would mean the original lesson would not have to be changed, making it much easier to not only implement but also for proper attributions to be given to authors. Also, this model would discourage users from ``messing up" existing lessons, that is, doing things such as erasing text or substituting in some form of spam text.
+
+\section{Conclusions}
+During the course of this project we built a web site around the goal of easily used algorithm visualizations in hypertext lessons, for use in a variety of contexts. In order to solve the problem of AVs being underused in computer science education, we attempted to create a website that could bring together students and these visualizations. On our site, classes, assignments, and grading focus on improving the overall user experience of educators using AVs as well. Finally, our vision for the site extends far beyond what we accomplished, leaving the door open wide for future improvement.
+
+\section{Acknowledgments}
+This project could not have been possible without the guidance of David Furcy, Tom Naps, and George Thomas from UW-Oshkosh. Funding was provided by the National Science Foundation, grant award \#0851569.
+
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{sources}  % sources.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+%\balancecolumns
+\balancecolumns
+
+% That's all folks!
+\end{document}

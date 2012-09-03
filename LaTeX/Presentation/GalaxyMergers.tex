@@ -1,0 +1,320 @@
+% by Sean McKenna
+
+\documentclass{beamer}
+\usetheme{Madrid} % My favorite!
+%\usetheme{Boadilla} % Pretty neat, soft color.
+%\usetheme{default}
+%\usetheme{Warsaw}
+%\usetheme{Bergen} % This template has nagivation on the left
+%\usetheme{Frankfurt} % Similar to the default 
+%with an extra region at the top.
+%\usecolortheme{seahorse} % Simple and clean template
+%\usetheme{Darmstadt} % not so good
+% Uncomment the following line if you want %
+% page numbers and using Warsaw theme%
+% \setbeamertemplate{footline}[page number]
+%\setbeamercovered{transparent}
+\setbeamercovered{invisible}
+% To remove the navigation symbols from 
+% the bottom of slides%
+\setbeamertemplate{navigation symbols}{} 
+%
+\usepackage{graphicx}
+%\usepackage{bm} % For typesetting bold math (not \mathbold)
+%\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
+%
+\title{Galaxy Mergers and Star Formation using TreeSPH}
+\author{Sean McKenna}
+\institute[Cornell College]
+{ Cornell College \\
+\medskip
+{\emph{smckenna12@cornellcollege.edu}}
+}
+\date{\today}
+% \today will show current date. 
+% Alternatively, you can specify a date.
+%
+\begin{document}
+%
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  Let's start with some animations...
+  \\ http://www.cfa.harvard.edu/seuforum/animations/animations
+  \\ http://www.galaxydynamics.org/tflops
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  \begin{itemize}
+    \item Milky Way collides with Andromeda!
+    \item three billion year countdown
+    \item two billion years before the Sun as red giant
+    \item collision = interaction
+    \item night sky: dark or light
+    \item numerical simulations
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  \begin{block}{Thesis}
+    Computational astrophysicists have developed efficient algorithms for modeling galactic interactions which enable researchers to find an increase in the rate of star formation during these encounters.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Numerical Simulations}
+  \begin{itemize}
+    \item formulation of models
+    \item semi-analytic technique
+    \item balance:
+    \begin{itemize}
+      \item accuracy
+      \item computational time
+    \end{itemize}
+    \item algorithms:
+    \begin{itemize}
+      \item procedural, step-by-step
+      \item mathematical tricks
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Galaxies}
+  \begin{figure}
+    \includegraphics[scale=0.235]{galaxies.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Galaxies}
+  \begin{itemize}
+    \item collection of stars, dust, and gas
+    \item held together by gravity
+    \item types
+    \begin{itemize}
+      \item cluster
+      \item dwarf
+      \item elliptical
+      \item irregular
+      \item spiral
+    \end{itemize}
+    \item gas: up to 10\%
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Dark Matter}
+  \begin{itemize}
+    \item discovered by Zwicky
+    \item anomalous observations of gravitational shifting of objects
+    \item gravitational interactions
+    \item no electromagnetic interactions, etc.
+    \item play a role in models of galaxies
+    \item average density calculated
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Star Formation}
+  \begin{figure}
+    \includegraphics[scale=0.46]{arp220.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Star Formation}
+  \begin{itemize}
+    \item Star formation rate (SFR):
+    \begin{itemize}
+      \item how quickly stars form in a galaxy
+    \end{itemize}
+    \item Star formation efficiency (SFE):
+    \begin{itemize}
+      \item governed by: $SFE(t) = \frac{M_{gas \to \star}(t)}{M_{gas}(t)}$
+    \end{itemize}
+    \item starburst galaxies (starbursts): high SFR
+    \begin{itemize}
+      \item Arp220
+    \end{itemize}
+    \item hint to the past and future
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Galaxy Interactions \& Mergers}
+  \begin{figure}
+    \includegraphics[scale=0.12]{ngc4676.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepts - Galaxy Interactions \& Mergers}
+  \begin{itemize}
+    \item gravitational and tidal interactions
+    \item stars form from dense areas of gas
+    \item mergers:
+    \begin{itemize}
+      \item aka, collision
+      \item spiral + spiral = elliptical
+      \item MWG + AG
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model - Purpose}
+  \begin{itemize}
+    \item reduce complex problem (semi-analytic)
+    \item allow problem to be solved numerically
+    \item simplify, reduces accuracy
+    \item must make assumptions
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Model - Assumptions \& Variables}
+  \begin{itemize}
+    \item spherical galaxies
+    \item dark matter in the galaxies
+    \item known density gradient
+    \item mass ratios
+    \item isothermal gas
+    \item $N = 120,000$
+    \item $T = 10^4 $K
+    \item variables:
+    \begin{itemize}
+      \item separation distance
+      \item spin orientation
+      \item galaxy type
+      \item mass ratio
+      \item ages
+      \item angle of interaction
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Numerical Simulations}
+  \begin{itemize}
+    \item algorithm: TreeSPH
+    \item TreeSPH: tree hierarchical method and smoothed particle hydrodynamics
+    \item method is Lagrangian (both pieces)
+    \item tree hierarchical method
+    \begin{itemize}
+      \item cluster stars together
+      \item get cluster gravitational interactions
+      \item stores clusters in a tree data structure
+    \end{itemize}
+    \item smoothed particle hydrodynamics (SPH)
+    \begin{itemize}
+      \item important role of gas in galaxies
+      \item coupled with the gravitational interactions
+    \end{itemize}
+    \item together, decent running time and semi-accurate results
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \begin{figure}
+    \includegraphics[scale=0.37]{merger.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \begin{itemize}
+    \item interactions and mergers may not affect SFR
+    \item mergers, increased SFR
+    \item retrograde mergers, increased SFR
+    \item amount of starting gas, not parameter for SFE
+    \item 15\% of interactions increased SFR by a multiple of five or more
+    \item merging time, lasts about $10^8$ years
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{itemize}
+    \item online website for storage and retrieval of galactic merger simulations
+    \item over 1,000 simulations online currently
+    \item virtual observatory hosted in France
+    \item tools for observers:
+    \begin{itemize}
+      \item FITS tables
+      \item IFU spectra
+      \item color-magnitude plots
+      \item FITS images
+      \item velocity dispersion graph
+      \item gas density graph
+      \item stellar density graph
+      \item stellar metallicity graph
+      \item and more...
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{figure}
+    \includegraphics[scale=0.55]{galmer1.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{figure}
+    \includegraphics[scale=0.43]{galmer2.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{figure}
+    \includegraphics[scale=0.39]{aladin.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{figure}
+    \includegraphics[scale=0.42]{vospec.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{GalMer Project}
+  \begin{figure}
+    \includegraphics[scale=0.8]{votools.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{itemize}
+    \item astrophysicists use numerical simulations
+    \item computations can be very complex
+    \item supercomputers: tools required to process these kinds of simulations
+    \item models: balance between accuracy and simplicity
+    \item merging galaxies see increases of SFR
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{References}
+    http://www.cfa.harvard.edu/seuforum/animations/
+    \\ http://www.galaxydynamics.org/tflops.html
+    \\ http://www.ipac.caltech.edu/2mass/gallery/galmorph/nir\_morph.htm
+    \\ http://apod.nasa.gov/apod/ap970617.html
+    \\ http://apod.nasa.gov/apod/ap080224.html
+    \\ http://www.journal-therapie.org/10.1051/0004-6361:20066959
+    \\ http://galmer.obspm.fr/
+\end{frame}
+
+\end{document}

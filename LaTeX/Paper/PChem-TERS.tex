@@ -1,0 +1,128 @@
+% by Sean McKenna
+
+%%% DOCUMENT TYPE
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+%%% PAGE DIMENSIONS
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\geometry{a4paper}
+
+%%% PACKAGES
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\setlength{\columnsep}{24pt}
+\usepackage[sort,compress,comma,super]{natbib}
+
+%%% CUSTOM COMMANDS
+% define commands for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\lhead{Sean McKenna}\chead{}\rhead{Cornell College}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% TITLE INFO
+\title{Mapping of B\sub{x}N\sub{y}C\sub{z}: Utilizing TERS to Analyze \textit{h}-BNC}
+\author{Sean McKenna}
+\date{\today}
+
+%%% BEGIN PROPOSAL
+\begin{document}
+\maketitle
+
+\begin{abstract}
+B\sub{x}N\sub{y}C\sub{z} is a notation describing a 2-D sheet that has both graphene and \textit{h}-BN sub-domains spread across the lattice. Recent studies have shown synthesis of such a lattice segregated into regions of these different domains, like a patchwork quilt. One of the fundamental gaps in the current research is the actual structure of these regions. No nanotechnology device could use these lattices until the structure is formed, and that is where the method of tip-enhanced Raman spectroscopy could be used to map the structure of \textit{h}-BNC. \\ \\
+
+\end{abstract}
+\begin{multicols}{2}
+	
+
+\section{\textbf{Introduction}}
+Graphene has many potential uses across the field of semiconductor physics.\cite{main,synth,semicond,band,qubit} These are simple 2-D sheets with ``intriguing'' properties relating to their electronic structure and magnetic ability. Graphene is a single atom-thick layer of graphite, a series of benzene rings interconnected. This simple structure results in surprising abilities such as being a semiconductor.\cite{semicond} Not only that, two layers of graphene on top of each other have been shown to have a fairly wide tunable band gap,\cite{band} which means that graphene alone can create a varying semiconductor which is of great interest to those working in nanotechnology and nanodevices. \\ \\
+
+Additionally, there is another type of sheet that has interesting properties: \textit{h}-BN, see Figure \ref{fig:h-bnc}b. The lattice of interconnected boron and nitrogen atoms in a hexagonal formation is very similar to graphene. Some of the key differences include the weaker Van der Waals forces, hexagonal rings stacked directly on top of each other, and the assymetric charge distribution.\cite{bn} The latter fact results in \textit{h}-BN acting as a better semiconductor than straight graphene, since the even charge distribution in graphene results in it being more metallic. Now commonly referred to as ``white graphite,'' \textit{h}-BN was first discovered in 1842 and is currently in use as a lubricant in devices that undergo high temperatures. \cite{bn} \\ \\
+
+Graphene antidot lattices (GALs) are basically 2-D sheets of graphene with ``holes'' cut out of them, see Figure \ref{fig:h-bnc}a. These have been created in the laboratory via electron beam lithography; researchers have shown that the ``holes'' essentially create another tunable band gap or adjustable semiconductor based on parameters of the antidots.\cite{qubit} Similar to the other tunable band gaps, these holes can potentially create new types of nanodevices. One such application is quite important for quantum information processing: qubits. It has been theorized that missing antidots (or defects) can create localized spin qubit states which could then be used to store information. If this process were scaled, then it could create a quantum computer.\cite{qubit} \\ \\
+
+With that, there is a disadvantage to the GALs; the formations are missing key structural elements and are thus weaker and not as useful in actual nanodevices and other applications. To address this, researchers have shown the successful synthesis of \textit{h}-BNC material: 2-D sheets of GAL filled with \textit{h}-BN.\cite{synth} It is easy to think that the holes are being filled with a semiconductor that will not greatly affect the function of the GAL, see Figure \ref{fig:h-bnc}c. With similar tunable band gaps, the \textit{h}-BNC can be used to create different types of semiconductors and be used in applications such as next-generation electronic devices and optics.\cite{main,synth}
+
+\begin{figure*}
+\begin{center}
+    \includegraphics[scale=0.8,bb=0 0 576 216]{h-bnc.png}
+  \caption{Different lattice formations: a. graphene antidot lattice (GAL),\cite{qubit} b. \textit{h}-BN,\cite{bn} c. experimental hypothesized \textit{h}-BNC,\cite{synth} and d. theoretical \textit{h}-BNC.\cite{main}}
+  \label{fig:h-bnc}
+\end{center}
+\end{figure*}
+
+
+
+\section{\textbf{Background}}
+In the synthesis of B\sub{x}N\sub{y}C\sub{z} nanostructures or \textit{h}-BNC, care was given to the overall process in creating the mixture. Previous studies had shown that just straight up mixing together graphene and \textit{h}-BN created a semiconductor with a small band gap, but a more adjustable band gap was the goal. By preheating the \textit{h}-BN to some temperature for a set duration and adjusting the flow of methane, the researchers were able to create different ratios of carbon in the \textit{h}-BNC structure.\cite{synth} Both methane (CH\sub{4}) and ammonia borane (BH\sub{3}) were used to supply the atoms into the structure, and, through thermal catalytic chemical vapor deposition (CVD), the sheets were constructed.\cite{synth} Several substrates were used during this process and ultimately resulted in the construction of the \textit{h}-BNC structures. \\ \\
+
+The researchers using this method stated that the structure was uniform and thin (only several layers thick, a total of 1 nm), which is supported through the film being mostly transparent.\cite{synth} After creating the structure, a multitude of tests were conducted to analyze what was created: AFM, HR-TEM, EELS (for chemical composition and structure), FFT, XPS (x-ray photoelectron spectroscopy), Raman spectroscopy, UV-absorption, and electrodes (for IV curves). The tests all concluded that only B, C, and N were in the structure. In addition, many of their results and even preliminary DFT calculations predicted the \textit{h}-BN pieces to ``clump'' together into regions amidst the normal graphene sheet, a so-called superlattice.\cite{synth} Many of the properties lined up with what a GAL would also predict, like the calculated band gap between conduction and valence bands being similar in a GAL and the \textit{h}-BNC. The XPS peaks and Raman bands along with the UV-vis also agreed with this prediction. \\ \\
+
+The synthesis process created a lattice of so-called domain segregated \textit{h}-BNC. However, all their experimental evidence only indirectly supported the hypothesis of domain segregation. The data supported a description of the distribution of the atoms spread across the lattice but not the exact structure of the lattice. Simple energy calculations for the system predicted a lowest energy in a split of the two types of sheets, essentially just one line between connecting a straight graphene sheet to an \textit{h}-BN sheet. This was not the case of these structures, due to kinetic factors like growth temperature, deposition rate, and substrate effect, which all would keep the regions from being too large and thus cause the domain segregation all throughout the structure.\cite{synth} \\ \\
+
+In a theoretical study, the effects of the \textit{h}-BNC and domain segregation were conducted.\cite{main} Again, tunable band gaps were found to be observed in very small domains of \textit{h}-BN in the nanoholes of graphene sheets. First principle DFT calculations were performed on a sheet containing two types of rhombus, two triangular, and a hexagonal formation of \textit{h}-BN nanoholes in the graphene sheet, as illustrated in Figure \ref{fig:h-bnc}d. The sizes of the domain were also varied to see how the calculations changed with that variable. The domain sizes were found to allow for a tunable band gap. \\ \\
+
+The DFT calculations were able to verify the cohesive and formation energies, which were greater for more stable structures. This emphasized the fact that the domains were more favorable thermodynamically as they grew in size. The values of the expected formation energies were reasonable for creating these molecules in a lab, which they were theorized to be. Also matching the actual experiment, they found the semiconductor band gap to vary directly with the increase in concentration of the nanodomain/hole in the sheet. \\ \\
+
+Triangle domains were the domains most likely to show magnetic properties. And it was also interesting to note that the triangular domains each are fundamentally different, one resulting in excess ``holes'' and another with excess electrons. With this, the spin is held symmetric along the p\sub{z} orbital, and this contributes to the main wavefunction of the triangular formation. The applications in quantum information processing play a part here.\cite{main} The study also tried an antidot lattice of \textit{h}-BN with the holes being filled with graphene. Similar results were obtained that also lined up with what the original experimenters were able to synthesize in the lab.\cite{main,synth} \\ \\
+
+The study wrapped up their work by double-checking their results with a more precise basis set that likely took longer to compute but gave accurate and similar results.\cite{main} With that, the nanodomains illustrated a potential tunable band gap along with nonmagnetic semiconductor band structures except for the triangular structures which had either magnetic or nonmagnetic properties depending on the arrangement. All of these calculations were based on very simple and uniform nanodomains resulting from the hypothetical lowest energy arrangement.
+
+
+
+\section{\textbf{Proposal}}
+The exact arrangement and structure of the \textit{h}-BNC sheets is unknown. I propose research to find the actual structure and then model that structure based on this research. There are fundamentally two steps to this process. The first step will be to identify and illustrate the structure of the \textit{h}-BNC sheets synthesized via the method of thermal catalytic CVD.\cite{synth} The last step will be to model this system using DFT and other such calculations and verify what is found experimentally with some theory, as was done for the domain segregated \textit{h}-BNC.\cite{main}
+
+\begin{figure*}
+\begin{center}
+  \includegraphics[scale=0.2,bb=0 0 519 600]{ters.png}
+  \caption{Simple illustration of tip-enhanced Raman spectroscopy (TERS)\cite{ters}}
+  \label{fig:ters}
+\end{center}
+\end{figure*}
+
+\subsection{Identifying \textit{h}-BNC Structure}
+As was clear when analyzing the synthesis of the B\sub{x}N\sub{y}C\sub{z} nanostructure, the distribution of C, B, and N atoms were explained and analyzed, but the actual structure and layout of the sheet was only indirectly hypothesized by the researchers. Finding the actual structure is important for understanding the process of creating the antidot lattice. Researchers would not be able to fully study the system without knowing the actual layout and structure of the sheet. \\ \\
+
+At some point, the goal of creating these lattice structures is to build some sort of nanodevice. No manufacturer would construct a device not knowing exactly how it is composed. When trying to coordinate the sizes of the antidots and make different band gap semiconductors from these sheets, it would be impossible to do this to any degree of architectural precision without knowing what the actual sheets and their nanodomains looked like. \\ \\
+
+As if the manufacturing reasons are not enough, there is another reason why researchers would want to identify the actual structure and layout of the \textit{h}-BNC sheet: modeling. There would be no way to save money and time outside of the lab to adequately model the system.  One would need to know what the entire system is made up of, atom by atom, but also where those atoms actually connect together. Once the structure is found and described, then models can be made to describe the system in the future. \\ \\
+
+In the synthesis of the \textit{h}-BNC sheets, the authors described why the exact structure could not be ascertained from their methods. It basically came down to how similar the carbon, nitrogen, and boron atoms are. This is also important as to why the graphene sheets and \textit{h}-BN are similar enough to be useful together. With only one electron difference essentially between each, many common methods of discerning energies and pinpointing structure were not possible.\cite{synth} Since the common experimental devices do not work, then it leads researchers to look at more exotic experimental methods. \\ \\
+
+To identify the actual structure of the \textit{h}-BNC sheets, the method of tip-enhanced Raman spectroscopy (TERS) is a high-resolution spectrum analysis of chemicals on the nanoscale.\cite{ters} The nanoscale resolution is achieved through using an atomic force microscopy (AFM) tip that would scan across the surface of the sheet recording surface-enhanced Raman spectroscopy (SERS) of each section, see Figure \ref{fig:ters}. Essentially, it is like combining AFM and SERS together (though it is slightly more complicated than just that). With some newer, finer AFM tips it is possible to conduct TERS with lateral resolution down to 0.2 nm.\cite{ters} This sort of resolution would enable a proper mapping of the \textit{h}-BNC to occur. \\ \\
+
+After collecting TERS spectra at many different points, the spectra would each be analyzed to find out if the region scanned was predominantly composed of what atoms. If carbon, then it is a graphene domain. If boron and nitrogen, then it is an \textit{h}-BN domain. And depending on what remains, it may be the edge along which these domains meet. By constructing the data together like a puzzle, a map of the \textit{h}-BNC sheet could be created to analyze the size of the actual \textit{h}-BN nanodomains.
+
+\subsection{Modeling Modified Structure}
+After mapping out the data to a picture of the actual B\sub{x}N\sub{y}C\sub{z} nanostructure, then a model could be made to formulate and confirm the experimental results of these sheets\cite{synth} as well as compare to other studies of \textit{h}-BNC's segregated domains.\cite{main} DFT calculations of the new model would be useful in verifying the lattice's electronic structure. \\ \\
+
+Results from this model could be verified with the experimental results both from the new synthesized substances undergoing TERS or from results of previous studies. This verify the original authors' work in addition to confirming that what is being synthesized for the experiment with TERS is the same as what was originally designed. \\ \\
+
+To address the concerns of researchers who synthesized \textit{h}-BNC, the model could incorporate kinetics. By incorporating variables like temperature, deposition rate, and the substrate, the model could predict what shapes and sizes of nanodomains will occur, adding these factors into the lowest energy DFT calculations. This would be very crucial future work, enhancing the model of graphene with nanoholes filled with \textit{h}-BN.
+
+
+
+\section{\textbf{Conclusion}}
+Graphene antidot lattices filled with interconnected boron and nitrogen atoms could be a key structure in the development of future semiconductor materials in a variety of nanodevices. The ability to adjust the band gap of the lattice as needed is important to how this sheet could be versatile in nanotechnology use. Before any such application can be made, the structure resulting from synthesizing \textit{h}-BNC must be understood and modeled. The only way to understand how these lattices function is to properly map out the connections between atoms and the size of the actual segregated nanodomains. One potential research method to construct the structure is the method of tip-enhanced Raman spectroscopy, which would enhance the understanding of how these nanodomains are segregated.
+
+
+\bibliographystyle{apalike}
+\bibliography{sources}
+
+\end{multicols}
+\end{document}

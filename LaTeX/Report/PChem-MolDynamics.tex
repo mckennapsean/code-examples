@@ -1,0 +1,69 @@
+% by Sean McKenna
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry}
+\geometry{a4paper}
+
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx} 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+\linespread{2}
+
+\title{Molecular Dynamics}
+\author{Sean McKenna}
+
+\begin{document}
+
+\begin{center}
+  \textbf{Proposal for Course Material: Molecular Dynamics} \\
+  by Sean McKenna
+\end{center}
+
+Computer simulation is key to many science fields nowadays. For one, the visual appeal of seeing and predicting from models what physical systems will look like is instrumental to its ``selling factor'' for research proposals, presentations, and talks. Not only that, but the models are constantly getting refined and adapted to improve the quality, speed, and quantity of the simulations produced. In fact, simulations have been known to predict behavior and the future, like economic, business, or weather models. This can save money and time when it comes to research. These are some of the many reasons why Computational Chemistry has been a growing field for chemists out there. Physics also uses many simulations, like research I have conducted on the modeling of galaxies. This makes Physical Chemistry no different, combining aspects of Physics into the realm of Chemistry. I am proposing the material I teach to the class be on a type of Computational Chemistry: Molecular Dynamics (MD).
+
+Molecular Dynamics encompasses very basic Physics principles along with aspects of Computer Science and information theory to produce simulations of molecules as they interact in environments and with each other. While many aspects of Computational Chemistry embody the principle of finding and locating the minimal point energy configuration of a molecule, MD focuses on how to best simulate the molecule/s over time into what we see in the real world. It does not come without its limitations, but the theory and basics behind the process are critical to understand. Like the entire Computer Science field, much development has occurred in the past fifty years, so the history is very fresh and interesting to follow. My hopes are to either at the beginning or end briefly go over some of these more important Physical Chemistry simulations, like Alder \& Wainwright's hard-sphere model in 1957, work on argon in 1964 by Rahman, and simulation of liquid water (1971) by Rahman and Stillinger.
+
+In nearly every article discussion we have had in class, there has been some use or mention of a simulation. Several have been Density Functional Theory, Hartree-Fock (used last semester), and Monte Carlo. We also have seen an article with MD mentioned. I could see other course material presented by the instructor to cover some other techniques. Like lab techniques, simulations can enhance research. Often lab research couples experiment with simulation. Simulations can be a useful predictor of how a process is working. Since MD simulations occur over time, I believe it is the best method to spend half-an-hour in class to cover. The rest of the morning could be filled with other material like the hardware needed for simulations, some of the basic ideas of how to set up a simulation ``experiment,'' which I feel you would be better to cover in this field since you have had previous experience from your last sabbatical that covered much of this, along with some of the other basic computational methods. Those are just my suggestions for your content, while I feel the content of Molecular Dynamics would certainly be an enhancement in the middle or toward the end of this material.
+
+After exploring the textbooks cited below and browsing briefly online, the following parts of MD would be covered: Newton's laws of motion, force fields, potential curves, algorithms, cost analysis, physical properties, thermodynamics, time-dependence, constant temperature/pressure, setup, and applications. There is certainly enough content to cover, and I would start by explaining Newton's laws of motions (see them below) and how they relate to the different types of potential curves and algorithms used in MD. I would briefly highlight the differences in the different MD algorithms: Verlet, leap-frog, velocity Verlet, and Beeman's. I would need to explain what an algorithm is too; I know this not a class of Computer Science students. I need to do more research on the force fields, since I know this is a bit dependent on what program you use. It might be too complex to mention any detail, but at least a bit of a difference can be mentioned.
+
+\begin{center}
+\begin{equation}
+  \vec{F}_{\textrm{A}} = m_{\textrm{A}} \frac{\textrm{d}^2\vec{r}_{\textrm{A}}}{\textrm{d}t^2}
+\end{equation}
+\end{center}
+
+Going over how each of the principle variables are used is important, such as position ($\vec{r}$), velocity ($\vec{v}$), and acceleration ($\vec{a}$). These play a critical role which varies depending on which algorithm you use. Then these can all be connected back to our study this week of thermodynamics which I can mention and illustrate using the equation illustrated below. Modifying the algorithms are the next important step when dealing with constant temperature and pressure, only a few points to mention. Then I would seek to add a bit of detail if possible on actually simulating a system, showing perhaps one software that can enable a simulation to be viewed, whether showing the computation live or showing the results, preferably on the computer via a movie/animation. I would plan to wrap up with mention of the different applications this is useful in: very much biochemistry for modeling proteins and molecules but also its use for other fields (Physics and galaxy modeling, for example).
+
+\begin{center}
+\begin{equation}
+  E_K = \displaystyle\sum_{i=1}^{N}\frac{|\vec{p}_i|^2}{2m_i} = \frac{k_BT}{2}(3N-N_c)
+\end{equation}
+\end{center}
+
+Simulations are a critical tool for research, and Molecular Dynamics is a powerful tool used to simulate a system and reactions as they occur over time. Learning about these tools, how they work, and what kinds of things are possible with them is important to enhance the understanding not only of the research articles we will continue to study in class and in our careers outside of Cornell, but the knowledge we can gain from MD can also be useful in multiple disciplines as well, which should appeal to almost everyone's interest in Biochemistry or Physical Chemistry. As a Computer Science and Physics major, I know this field heavily interests me, especially since I have done some research from a different end of the spectrum (galaxies instead of atoms!). I am excited and ready to excite my peers about learning the importance and usefulness of Molecular Dynamics. \\
+
+
+\textbf{References:}\\
+Molecular Modelling for Beginners, 2nd Ed., Hinchcliffe \\
+Molecular Modelling: Principles \& Applications, 2nd Ed., Leach
+%PhET
+
+\end{document}

@@ -1,0 +1,97 @@
+% by Sean McKenna
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\setbeamercovered{invisible}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[sort,compress,comma,super]{natbib}
+\bibliographystyle{apalike}
+
+%%% CUSTOM COMMANDS
+% define commands for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+%for natbib & beamer to kill error
+\def\newblock{\hskip .11em plus .33em minus .07em}
+
+\title{Sample Presentation}
+\author{Sean McKenna}
+\institute[University of Utah]{ University of Utah \\ \medskip {\emph{mckennapsean@gmail.com}} }
+\date{\today}
+
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  \begin{itemize}
+    \item briefly explain and introduce topic
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Background}
+  \begin{itemize}
+    \item important information to understand the topic
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Research}
+  \begin{block}{Fundamental Research Question}
+    What were you trying to find out?
+  \end{block}
+  \begin{block}{Significance}
+    So what? Why is this important?
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Experiment}
+  \begin{itemize}
+    \item what did you do to answer your research question?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \begin{itemize}
+    \item what did you get from your experiment?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analysis}
+  \begin{itemize}
+    \item what did you find from the results of your experiment?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{itemize}
+    \item so what? why are your results important?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Future Work}
+  \begin{itemize}
+    \item what are the next steps for research?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{References}
+  \bibliography{sources}
+\end{frame}
+
+
+\end{document}

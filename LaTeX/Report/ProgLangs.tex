@@ -1,0 +1,61 @@
+% by Sean McKenna
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+%%% PAGE DIMENSIONS
+\usepackage[left=2cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\geometry{a4paper}
+
+%%% PACKAGES
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\setlength{\columnsep}{24pt}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Sean McKenna}\chead{}\rhead{Cornell College}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+\begin{document}
+
+\section{JavaScript}
+JavaScript was born by the hands of Brendan Eich.\cite{sean-javascript} In 1995, Netscape tasked him to write a new programming language for their web browser, Mosaic. In a mere ten days, JavaScript was created with the purpose of running on the client’s web browser. Because of this, it was designed to be easy to write. Picking up elements from C, LISP, Smalltalk, and Java, Eich’s goal was to create a lightweight language that had vast functionality.
+
+With C-like syntax, JavaScript builds off of previous languages to make it more readable and easy to pick up. Additionally, as Eich explains, ``I was under marketing orders to make it look like Java but not make it too big for its britches … [it] needed to be a silly little brother language.’’\cite{sean-javascript} This quote illustrates how JavaScript was meant to be simpler than Java and lightweight but still hold on to specific reserved words from Java and C.
+
+While not even at version 2.0 yet, JavaScript has taken the web by force, it is the key player in dynamic web pages and HTML5 with many variants and frameworks. It combines functional, imperative, and object-oriented design all into one language, and it is designed to run on lower-end hardware.
+
+
+\section{SQL}
+SQL or Structured English Query Language (SEQUEL) was initially developed by Donald Chamberlin and Raymond Boyce at IBM in the 1970’s.\cite{sean-sql-1} Officially adopted by ISO Standards and pronounced ``S-Q-L,’’ this is a declarative language designed with the sole purpose of managing data within a database. SQL is the opposite of imperative programming where the user specifies a series of commands for the computer to run. SQL is essentially a type of logic programming, since the user offers a set of questions for the computer to answer, and these answers can vary based on previous queries posed by the user.\cite{sean-sql-3}
+
+Like most imperative programming methodologies, advocates of these languages will often claim that SQL is not an actual programming language. However, these individuals are mistaken since SQL provides important programming language aspects such as variables, loops, logical directives, etc.\cite{sean-sql-2} Actually, SQL is a fourth-generation language, designed to be easily read by humans, unlike third-generation, high-level languages such as Java or C++.\cite{sean-sql-2} SQL is built around data and databases, so with its many variants (MSSQL, MySQL, PostgreSQL, etc.), this language will continue to be utilized across the web and in many offline databases as well.
+
+
+\section{PHP}
+In 1994, Rasmus Lerdorf invented PHP Tools, a set of CGI scripts written in C to generate web pages for his online resume.\cite{sean-php} Eventually, he rewrote this code to build an entire framework for database interaction and dynamic page generation on his server, denoted as PHP/FI.\cite{sean-php} After several years, a team at an Israeli university, Andi Gutmans and Zeev Suraski rewrote the entire parser in 1997 to improve the language. This is when common PHP was born, with its recursive acronym being PHP: Hypertext Preprocessor.\cite{sean-php} Similar to JavaScript, the goal of PHP was to simplify code for web pages, except in this case it was a back-end to server-side scripting and database access to SQL-like databases. Its largest difference from previous server-side scripts is that it was embedded within the HTML syntax, not called from a separate file.
+
+While designing PHP, elements of the language were borrowed from C, Java, and Perl. Both procedural and object-oriented methodologies are incorporated into the PHP language. With its main goal of dynamically creating web pages, it excels at text processing, database interaction, and general scripting of tasks. PHP is a very common language for web servers, and it serves as one of the most popular web-oriented and scripting languages.\cite{sean-php}
+
+
+\section{Processing}
+Ben Fry and Casey Reas co-founded this programming language for visual arts and graphics at the MIT Media Lab in 2001.\cite{sean-processing-1} This open-source language’s first goal was to promote software literacy and teach computer programming using visual aids. Its purpose has expanded to also professional and production work for animations and visualizations. The entire project stems off of the Java language and JVM, so it is open-source and runs cross-platform. Images and visualizations can be easily exported as applets or as other static file formats for display only. The language was designed to support Java-like syntax and create work using little code, with OpenGL support built-in.\cite{sean-processing-1}
+
+Unlike the other languages presented here, Processing’s main goal was not as a web-based project. However, a port of this language was developed in JavaScript to easily enable ports of these projects to be built on the web, Processing.js.\cite{sean-processing-2} This library allows Processing code to run in the browser with HTML5 and JavaScript. This is a great example of how programming languages interconnect with each other through multiple implementations, libraries, and ports.
+
+
+\section{Conclusion}
+There are many factors to consider when writing a programming language. What features are required, what methodologies should be incorporated, how readable or writable the language should be, and many more. These are just as important to someone writing software, too. Most software is considered a library of code, like a mini-programming language. Special methods that must be called, hopefully good documentation, and special objects to fulfill the goals of the library. When considering all these factors like writing a brand-new language, it causes software engineers to develop clear, more sustainable code that will enable its users to get what they need out of the code more quickly and effectively.
+
+\raggedright
+\bibliographystyle{apalike}
+\bibliography{FinalEssay}
+
+\end{document}

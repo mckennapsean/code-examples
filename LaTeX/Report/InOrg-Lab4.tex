@@ -1,0 +1,177 @@
+% by Sean McKenna
+
+% This is a LaTeX version of a laboratory report
+\documentclass[11pt]{article}
+
+% necessary imports
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage[super]{natbib}
+\usepackage{mciteplus}
+
+% page adjustments
+\setlength{\parindent}{0pt}
+\geometry{a4paper}
+
+% expand margins?
+%\addtolength{\oddsidemargin}{-.5in}
+%\addtolength{\evensidemargin}{-.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1in}
+
+% double-spaced?
+%\linespread{2}
+
+%define commands for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% title
+\title{Preparation of Tetraphenylporphyrin \\ and its Metal Complexes}
+\author{Sean McKenna}
+\date{\today}
+
+% begin the document
+\begin{document}
+\maketitle
+
+% header info
+\begin{center}
+\begin{tabular}{lr}
+Dates Performed: March 7-9, 2012 & Lab Partner: Elizabeth MacGregor\\
+Instructor: Professor Cindy Strong
+\end{tabular}
+\end{center}
+
+
+% describe the experiment's method
+\section{Method}
+Using a published method,\cite{lab} both free tetraphenylporphyrin (H\sub{2}TPP) and copper TPP were synthesized. \\
+
+During the synthesis of H\sub{2}TPP, product was lost since the liquid was viscous and sticking to the flask as it was poured into the suction filter. The product was a solid, deep purple color, coinciding with the Greek word ``porphyrin,'' meaning purple.' \\
+
+During the synthesis of CuTPP, some of the H\sub{2}TPP did not completely transfer from the weigh boat to the solution, since it was sticking to the weigh boat. However, this should have been the limiting reagent, so the product would still be primarily CuTPP. \\
+
+A JEOL 270MHz NMR spectrometer was used to obtain the \super{1}H NMR spectrum for H\sub{2}TPP in a chloroform-D solution. For the spectra, an Agilant 8453 UV-visible spectrophotometer was utilized with toluene as a solvent. Additionally, the melting point of H\sub{2}TPP could not be easily measured since the accepted value is $>300^{\circ}$C. \cite{tpp}
+
+
+% show the reaction/s
+\section{Reactions}
+\begin{center}
+8C\sub{7}H\sub{6}O (aq) + 8C\sub{4}H\sub{5}N (aq) + 3O\sub{2} (g) $\rightarrow$ 2C\sub{44}H\sub{30}N\sub{4} (s) + 14H\sub{2}O (l) \\
+\textit{or} \\
+8[benzaldehyde] + 8[pyrrole] + 3O\sub{2} $\rightarrow$ 2[H\sub{2}TPP] + 14H\sub{2}O \bigskip
+
+\textbf{and} \bigskip
+
+C\sub{44}H\sub{30}N\sub{4} (s) + CuC\sub{4}H\sub{8}O\sub{5} (s) $\rightarrow$ CuC\sub{44}H\sub{28}N\sub{4} (s) + 2C\sub{2}H\sub{4}O\sub{2} (aq) + H\sub{2}O (l) \\
+\textit{or} \\
+H\sub{2}TPP + copper(II) ethanoate monohydrate $\rightarrow$ CuTPP + 2[acetic acid] + H\sub{2}O
+\end{center}
+
+
+% show some calculations
+%\section{Sample Calculations}
+
+
+% show any final results from the lab, tabular form
+\section{Results}
+For both reactions, the following table illustrates the yield and percent yield.
+
+\begin{center}
+\begin{tabular}{|l|c|r|}
+\hline
+\textbf{Product} & \textbf{Yield} & \textbf{\% Yield} \\
+\hline
+H\sub{2}TPP & 0.558 g & 4.62\% \\
+CuTPP & 0.031 g & 40\% \\
+\hline
+\end{tabular}
+\end{center}
+
+For the \super{1}H NMR spectrum of H\sub{2}TPP, peaks are found and integrated in Figure 1. Figures 2 and 3 show a zoomed-in portion of the important chemical shifts, and Figure 4 was used on a more dilute solution to compare against Figure 1 for solvent peaks. Below is a table of the measured chemical shifts (in ppm).
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Product} & \textbf{Pyrrole H\super{+}} & \textbf{Ortho H\super{+}} & \textbf{Meta H\super{+}} & \textbf{Para H\super{+}} & \textbf{N-H} \\
+\hline
+H\sub{2}TPP & 8.83 & 8.19 & 7.71 & 7.75 & -2.78 \\
+\hline
+\end{tabular}
+\end{center}
+
+Additionally, the UV-visible spectra taken for both compounds turned out to be fairly similar. Figure 5 is the spectrum for H\sub{2}TPP, and Figure 6 is for CuTPP.
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Product} & \textbf{$\lambda$\sub{a}} & \textbf{$\lambda$\sub{b}} \\
+\hline
+H\sub{2}TPP & 419 nm & --- \\
+CuTPP & 417 nm & 540 nm \\
+\hline
+\end{tabular}
+\end{center}
+
+
+%%% COMPARE UV-VIS!
+% discuss what was found, compare to literature, answer specified questions
+\section{Discussion}
+The \super{1}H NMR spectrum matches relatively to another lab's NMR analysis of H\sub{2}TPP.\cite{nmr} Additionally, the published procedure used to synthesize H\sub{2}TPP also listed some expected chemical shifts.\cite{lab} Below is a table summarizing the results.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{} & \textbf{Pyrrole H\super{+}} & \textbf{Ortho H\super{+}} & \textbf{Meta H\super{+}} & \textbf{Para H\super{+}} & \textbf{N-H} \\
+\hline
+Measured & 8.83 & 8.19 & 7.71 & 7.75 & -2.78 \\
+Laboratory\cite{nmr} & 8.85 & 8.28 & 7.75 & 7.77 & -2.79 \\
+Procedure\cite{lab} & 8.6 & 8.2 & $\approx$7.6 & $\approx$7.6 & -2.3 \\
+\hline
+\end{tabular}
+\end{center}
+
+Besides the data reported above and the chloroform-D peaks, there was only one unidentified peak around 4.1 ppm. The results may not match exactly because the NMR has not been calibrated for a while. Overall, this data supports the claim that H\sub{2}TPP was synthesized. \\
+
+For the UV-vis spectra, the values measured were close to the expected values.
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{} & \textbf{$\lambda$\sub{a}} & \textbf{$\lambda$\sub{b}} \\
+\hline
+H\sub{2}TPP - Measured & 419 nm & --- \\
+H\sub{2}TPP - Reported\cite{tpp} & 415 nm  & --- \\
+CuTPP - Measured & 417 nm & 540 nm \\
+CuTPP - Reported\cite{cutpp} & 411 nm & 536 nm \\
+\hline
+\end{tabular}
+\end{center}
+
+The UV-absorption values were all pretty close, and some of the offset may be due to incorrect calibration in the devices or possible contaminants in the produced solution. The proper trends were seen (decrease in wavelength or increase in energy) from the H\sub{2}TPP peak to the CuTPP correlating peak. Interestingly, no second maximum wavelength of UV absoprtion was listed for H\sub{2}TPP. According to the data, it would be around 514 nm. The absorbance values at all peaks past the first maximum wavelength all were hardly noticeable on each spectra. Figure 7 shows a zoomed-in view of the spectrum in Figure 5 (H\sub{2}TPP). Despite this discrepancy, it does appear that the molecules synthesized coincided with H\sub{2}TPP and CuTPP, as expected.
+
+
+% answer extra questions
+%\section{Questions}
+
+
+% add the references
+\raggedright
+\bibliographystyle{achemso}
+\bibliography{sources}
+
+
+% and that's a wrap!
+\end{document}
