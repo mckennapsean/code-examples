@@ -1,0 +1,11 @@
+can run programs using given bash script
+  e.g. program prepDB.py
+  ./run.sh prepDB
+  be sure the target files are in the proper directory
+  check the Python script to check the directory
+
+
+finderPNG.py - converts finder charts to transparent PNGs
+fitsPNG.py - converts FITS images to PNG (for the web)
+prepDB.py - converts several CSV files to put them into a database
+prepTGT.py - convert a CSV file into a JQuery autocomplete format
