@@ -1,0 +1,169 @@
+% by Sean McKenna
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usefonttheme{serif}
+\setbeamercovered{invisible}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\lstset{language=Ruby, frame=single, numbers=left, numbersep=-7pt, tabsize=2, keepspaces=true, columns=fullflexible, basicstyle=\ttfamily\scriptsize, keywordstyle=\color{blue}}
+
+\title{Ruby on Rails}
+\author{Sean McKenna}
+\institute[Cornell College]{ Cornell College \\ \medskip {\emph{smckenna12@cornellcollege.edu}} }
+\date{\today}
+
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  \begin{itemize}
+    \item Rails - web framework using Ruby \medskip
+    \item MVC architecture \medskip
+    \item specific Ruby gems/packages
+    \begin{itemize}
+      \item Active Record - DB interaction
+      \item Action Pack - displaying info to user in browser
+      \begin{itemize}
+        \item Action Controller
+        \item Action View
+      \end{itemize}
+    \end{itemize} \medskip
+    \item generates specific folder structure \medskip
+    \item can create web applications in a workflow \medskip
+    \item often combined with version control
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Video Blog}
+  \begin{figure}
+    \includegraphics[scale=0.3]{list.png}
+    \caption{List all video blogs}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Video Blog}
+  \begin{figure}
+    \includegraphics[scale=0.3]{show.png}
+    \caption{Display a single video blog with comments}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Video Blog}
+  \begin{figure}
+    \includegraphics[scale=0.3]{edit.png}
+    \caption{Editing a video blog}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{MVC Architecture}
+  \begin{figure}
+    \includegraphics[scale=1.2]{mvc.png}
+    \caption{MVC architecture}
+  \end{figure}
+  \begin{itemize}
+    \item \textbf{Model}: business logic, database (CRUD), Active Record
+    \item \textbf{View}: interacts with user, HTML templates, Action View
+    \item \textbf{Controller}: model (interact), view (render), Action Controller
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Model}
+  \begin{block}{Scaffolding}
+    rails generate scaffold Video title:string user\_id:integer embed\_code:text
+  \end{block}
+  \begin{lstlisting}{}
+    class Video < ActiveRecord::Base
+      attr_accessible :embed_code, :title
+      validates :title, :embed_code, :presence => true
+      validate :must_have_valid_embed_code
+
+      has_many :comments
+
+      def must_have_valid_embed_code
+  	    unless embed_code.include?("<iframe")
+  		    errors.add(:embed_code, "Must include an iframe tag")
+  	    end
+      end
+    end
+  \end{lstlisting}
+\end{frame}
+
+\lstset{language=HTML}
+\begin{frame}[fragile]
+  \frametitle{View}
+  \begin{lstlisting}{}
+    <h1>Listing videos</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Embed code</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <% @videos.each do |video| %>
+        <tr>
+          <td><%= video.title %></td>
+          <td><%= sanitize_embed_code video %></td>
+          <td><%= link_to 'Show', video %></td>
+          <td><%= link_to 'Edit', edit_video_path(video) %></td>
+          <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?',
+                          :method => :delete %></td>
+        </tr>
+      <% end %>
+    </table>
+    <br />
+    <%= link_to 'New Video', new_video_path %>
+  \end{lstlisting}
+\end{frame}
+
+\lstset{language=Ruby}
+\begin{frame}[fragile]
+  \frametitle{Controller}
+  \begin{lstlisting}{}
+    class VideosController < ApplicationController
+      def index
+        @videos = Video.all
+        respond_to do |format|
+          format.html # index.html.erb
+          format.json { render :json => @videos }
+          format.atom
+        end
+      end
+
+      def show    ...    end
+      def new    ...    end
+      def edit    ...    end
+      def create    ...    end
+      def update    ...    end
+      def destroy    ...    end
+
+    end
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}
+  \frametitle{References}
+  \begin{itemize}
+    \item \url{http://www.sitepoint.com/learn-ruby-on-rails-8/} \bigskip
+    \item \url{http://ruby.railstutorial.org/chapters/a-demo-app\#top} \bigskip
+    \item \url{http://ofps.oreilly.com/titles/9780596521424/rails.html}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
