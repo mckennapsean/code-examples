@@ -1,0 +1,13 @@
+can run programs using given bash script
+  e.g. program ForLoop.scala
+  ./run.sh ForLoop
+
+
+Koans
+  contains all the complete Scala Koans
+
+Polyhedron
+  collection of classes to establish a polyhedron
+
+ForLoop.scala - simple run of a for loop
+HelloWorld.scala - simple Hello, World program
