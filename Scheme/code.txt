@@ -1,0 +1,8 @@
+can run programs using DrRacket
+
+
+functions.scm - a few functions generated in Scheme
+harmonic.scm - harmonic series implementation
+lists.scm - list functions
+rational.scm - implementation of rational numbers
+recursion.scm - implementation using recursion
