@@ -20,7 +20,7 @@ System
 Multi-platform support:
 
 WINDOWS (cygwin)
-  gcc -o FILE.exe FILE.c -lgl -lglu -lglut -lopenl32
+  gcc -o FILE.exe FILE.c -lgl -lglu -lglut -lopengl32
   startx
     gives you xterm window
   ./FILE.exe
