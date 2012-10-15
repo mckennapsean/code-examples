@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>Create bars</title>
+		<script type="text/javascript" src="d3.v2.js"></script>
+		<style type="text/css">
+
+			/* Add styling for bars in bar chart */
+			.bar {
+				fill: steelblue;
+				stroke: none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			//Define our random-number generator function
+			var _id_ = 0;
+			function generate() {
+				return {
+					index: _id_++,
+					value: 5 + 95 * Math.random()
+				};
+			}
+
+			//Generate random data to use for the chart
+			var data = d3.range(100).map(generate);
+			
+			
+			
+			//Set variables for desired size of chart
+			var w = 900,
+				h = 100,
+				bw = 9;
+
+
+
+			//Select the <body> and create a new SVG element
+			//with the width and height values set above.
+			var svg = d3.select("body").append("svg")
+						.attr("width", w)
+						.attr("height", h);
+			
+			//NOTE:  The variable 'svg' now stores a selection
+			//		 referencing the SVG element we just created.
+
+
+
+			//Create a series of 'rect' elements within the SVG,
+			//with each 'rect' referencing a corresponding data values
+			svg.selectAll("rect.bar")								//Select all not-yet-existing rects with class 'bar'
+				.data(data)											//Bind array of data values to the empty selection
+				.enter()											//Returns the selection of new elements needed
+				.append("rect")										//Create a 'rect' for each one, and for each 'rect'…
+				.attr("class", "bar")								//	assign a class of 'bar', so CSS styles will be applied
+				.attr("x", function(d, i) {
+					return i * bw;									//	set x value to index value times bar width
+				})
+				.attr("width", bw - 1)								//	set width to bar width minus 1 (for visual padding)
+				.attr("y", function(d) {
+					return h - d.value;								//	set y value to height minus the data value
+				})
+				.attr("height", function(d) {
+					return d.value;									//	set height to height the data value
+				});
+
+
+
+		</script>
+	</body>
+</html>
