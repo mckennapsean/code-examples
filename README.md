@@ -3,9 +3,11 @@ Collection of Sample Programs
 
 This catalogue spans an assortment of programming languages, including sample code, demos, and tutorial programs.
 
-### Programming Languages
+Programming Languages
+---------------------
 
 -  C
+-  d3
 -  Java
 -  LaTeX
 -  OpenGL
@@ -16,13 +18,15 @@ This catalogue spans an assortment of programming languages, including sample co
 -  Scheme
 -  SQL
 
-### Folder Structure
+Folder Structure
+----------------
 
 Each programming language has a folder. Check each folder to learn how to run or compile the sample code.
 
 For each programming language, any borrowed code is identified.
 
-### Adding Sample Code
+Adding Sample Code
+------------------
 
 Additional sample code will be added to this collection over time. It is a work-in-progress.
 

@@ -7,36 +7,36 @@ Program List
 *Algorithms*
 
 -  **caesarCipher**.c
-  >  encode or decode from a text file
+    - encode or decode from a text file
 
 *Data Structures*
 
 -  **binarySearchTree**.c
-  >  binary search tree implementation
+    - binary search tree implementation
 -  **linkedList**.c
-  >  linked list implementation with command line interface
+    - linked list implementation with command line interface
 -  **stack**.c
-  >  stack implementation
+    - stack implementation
 
 *Language*
 
 -  **circle**.c
-  >  output points along a unit circle
+    - output points along a unit circle
 -  **helloWorld**.c
-  >  hello, world!
+    - hello, world!
 -  **ints**.c
-  >  printout integers and pointers
+    - printout integers and pointers
 -  **macroDemo**.c
-  >  test macros and system output
+    - test macros and system output
 -  **pointer**.c
-  >  test C pointers
+    - test C pointers
 
 *System*
 
 -  **fileIO**.c
-  >  read from file
+    - read from file
 -  **readInput**.c
-  >  read from command line input
+    - read from command line input
 
 Compiling & Running Code
 ------------------------
