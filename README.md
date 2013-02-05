@@ -1,17 +1,29 @@
-Collection of sample programs and tutorials multiple languages.
+Collection of Sample Programs
+=============================
 
-Some of this code is not owned by me, some have been provided from various courses or borrowed code from textbooks. All my own programs have been marked as such.
+This catalogue spans an assortment of programming languages, including sample code, demos, and tutorial programs.
 
-Included languges:
-  C
-  Java
-  LaTeX
-  OpenGL
-  Processing
-  Python
-  Ruby
-  Scala
-  Scheme
-  SQL
+### Programming Languages
 
-Check each programming language's folder to see the specifics of the code provided.
+-  C
+-  Java
+-  LaTeX
+-  OpenGL
+-  Processing
+-  Python
+-  Ruby
+-  Scala
+-  Scheme
+-  SQL
+
+### Folder Structure
+
+Each programming language has a folder. Check each folder to learn how to run or compile the sample code.
+
+For each programming language, any borrowed code is identified.
+
+### Adding Sample Code
+
+Additional sample code will be added to this collection over time. It is a work-in-progress.
+
+If you have anything you would like to add, feel free to fork and send a pull request. Credit will be given where credit is due.
