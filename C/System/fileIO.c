@@ -1,18 +1,19 @@
-// by Sean McKenna, with outside help
+// by Sean McKenna
+// changing case inspired by Cerolobo link below
 // read input from a file
 // must run in same directory as text file
 
 #include <stdio.h>
 
-// Code found on website by Cerolobo:
-// www.dreamincode.net/forums/topic/44152-making-the-first-letter-of-a-string-uppercase/
+// code for changing the case, by Cerolobo:
+// http://www.dreamincode.net/forums/topic/44152-making-the-first-letter-of-a-string-uppercase/
 char caseup(char entry){
   if(entry >= 'a' && entry <= 'z')
     entry -= 'a' - 'A';
   return entry;
 }
 
-// Turn an entire string upper-case
+// turn an entire string upper-case
 void allcaps(char string[]){
   int i;
   for(i = 0; i < 256; i++)
@@ -20,6 +21,7 @@ void allcaps(char string[]){
     string[i] -= 'a' - 'A'; 
 }
 
+// main test of the input from a file
 void main(){
   FILE *inFile;
   FILE *outFile;
@@ -27,22 +29,23 @@ void main(){
   outFile = fopen("fileIO.out", "w");
   char input[256];
   char output[256];
-
-  // Use fgets instead? gets multiple lines?
-//  fscanf(inFile, "%[^\n]\n", input);
+  
+  // can use fscanf, or fgets
+  //fscanf(inFile, "%[^\n]\n", input);
   fgets(input, 256, inFile);
   printf("Your file contains: %s", input);
   fgets(output, 256, inFile);
   fclose(inFile);
-
-  // This is where you can change the output based on the input
-//  output = input;
-allcaps(output);
-//  int i;
-//  for(i = 0; i < 256; i++){
-//    output[i] = caseup(output[i]);
-//  }
-
+  
+  // change the output as desired
+  //output = input;
+  allcaps(output);
+  //int i;
+  //for(i = 0; i < 256; i++){
+  //  output[i] = caseup(output[i]);
+  //}
+  
+  // write out the final output
   fprintf(outFile, "%s\n", output);
   fclose(outFile);
 }

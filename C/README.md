@@ -26,7 +26,7 @@ Program List
     - hello, world!
 -  **ints**.c
     - printout integers and pointers
--  **macroDemo**.c
+-  **macros**.c
     - test macros and system output
 -  **pointer**.c
     - test C pointers
