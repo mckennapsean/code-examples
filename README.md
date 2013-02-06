@@ -7,7 +7,7 @@ Programming Languages
 ---------------------
 
 -  C
--  d3
+-  D3
 -  Java
 -  LaTeX
 -  OpenGL

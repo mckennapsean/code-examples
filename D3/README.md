@@ -1,4 +1,4 @@
-d3 - Sample Code
+D3 - Sample Code
 ===============
 
 Program List
@@ -46,7 +46,7 @@ Compiling & Running Code
 
 simply open the HTML files in a web browser
 
-loading files in d3 will require running a web server
+loading files in D3 will require running a web server
 
 Credit
 ------
