@@ -25,6 +25,8 @@ Program List
 
 *Data Structures*
 
+-  **Date**.java
+    - format the input of a string to a date format, using Java objects and exceptions
 -  **DaytimeProtocolClient**.java
     - grab the date from the internet
 
