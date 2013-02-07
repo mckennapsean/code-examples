@@ -80,3 +80,8 @@ for Linux, you can use the provided bash script
 > >  ./../../run.sh **Fractals**
 
 please note that some programs require Java 3D
+
+Credit
+------
+
+Adam Reed - Algorithms/Ananagrams.java
