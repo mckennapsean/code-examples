@@ -1,5 +1,5 @@
 // by Sean McKenna on April 14th, 2011
-//
+// a sidewalk object in CityScape.java
 
 import java.util.*;
 import java.awt.*;

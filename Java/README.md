@@ -36,18 +36,19 @@ Program List
     - cute 2D changing city environment
 -  **Clipping**.java
     - implementation of the Sutherland-Hodgman clipping algorithm
+    - credit goes to the JHAVE project
 -  **Faces**.java
     - draw some 2D faces
 -  **Fractals**.java
     - implementation of the Mandelbrot set
 -  **Heartbeat**.java
-    - animation with GUI to change waveform
+    - animation of a moving ball with a slider to change frequency
 -  **Simple**.java
-    - some simple java 2D graphics
+    - some simple java 2D graphics, several examples
 -  **Tetrahedron**.java
-    - 3D tetrahedron, requires Java 3D
+    - 3D rotating tetrahedron in a scene graph, requires Java 3D
 -  **Torus**.java
-    - 3D torus, requires Java 3D
+    - several rotating 3D toruses inside of each other, requires Java 3D
 
 *Language*
 
@@ -86,4 +87,10 @@ please note that some programs require Java 3D
 Credit
 ------
 
-Adam Reed - Algorithms/Ananagrams.java
+**Leon Tabak** for inspiring most of the sample files here
+
+**Tony deLaubenfels** for inspiring *System/UDPPingServer.java*
+
+**Adam Reed** for assisting with *Algorithms/Ananagrams.java*
+
+JHAVE project for the backbone of *Graphics/Clipping*

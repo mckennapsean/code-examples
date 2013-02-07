@@ -1,12 +1,7 @@
 // by Sean McKenna on April 11th, 2011
-//
-//PolygonClipping.java interacts using Clipping.java to create a random, shaded
-//polygon clipped inside of a random window on a fixed window. Additionally,
-//mouse clicks will re-generate a new polygon set.
-//
-//The Sutherland-Hodgman Clipping algorithm was borrowed and adapted from code
-//written by Shawn Recker and Alejandro from their research at UW-Oshkosh 2010 REU
-//
+// works with Clipping.java to test the Sutherland-Hodgeman Clipping Algorithm
+// clipping algorithm was inspired by the open-source project JHAVE
+// the rest of the JHAVE project is GPL-licensed and NOT licensed by the sample code base
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;

@@ -1,3 +1,7 @@
+// by Sean McKenna
+// creates a simple bitmap image
+// works with Simple.java
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;

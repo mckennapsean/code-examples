@@ -1,5 +1,7 @@
 // by Sean McKenna on April 12th, 2011
-//
+// generates a beautiful CityScape using many 2D objects in Java
+// requires many objects: building, sidewalk, sky, street, window, and many generator objects
+// mouse clicks moves to a new city scape
 
 import java.awt.Container;
 import javax.swing.JFrame;

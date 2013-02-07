@@ -1,5 +1,5 @@
 // by Sean McKenna on April 12th, 2011
-//
+// the cityscape panel in CityScape.java
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;

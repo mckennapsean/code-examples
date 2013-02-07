@@ -1,9 +1,7 @@
 // by Sean McKenna on April 11th, 2011
-//
-//Clipping.java interacts using PolygonClipping.java to create a random, shaded
-//polygon clipped inside of a random window on a fixed window. Additionally,
-//mouse clicks will re-generate a new polygon set.
-//
+// interacts with PolygonClipping.java to create random, shaded polygons
+// these are then clipped to some arbitrary window (Sutherland-Hodgeman clipping algorithm)
+// mouse clicks generate a new random polygons & clipping windo
 
 import java.awt.Container;
 import javax.swing.JFrame;

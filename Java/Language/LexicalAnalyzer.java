@@ -1,12 +1,12 @@
-// created in class with Leon Tabak
-// Java version of book's lexical analyzer
+// by Sean McKenna
+// lexical analyzer that breaks apart interesting characters in code
 
 import java.util.*;
 import java.util.regex.*;
 
 public class LexicalAnalyzer{
-
-  // Enum for the tokenizers
+  
+  // enum for the tokenizers
   public enum Tokens{
     INTEGER_LITERAL,
     FLOATING_LITERAL,
@@ -21,15 +21,15 @@ public class LexicalAnalyzer{
     COMMENT,
     UNRECOGNIZED
   };
-
-  // Main method - lexical analyzer
+  
+  // main method - lexical analyzer
   public static void main(String[] args){
-    // Debug for tokenizers
-    //for(Tokens t: Tokens.values()){
+    
+    // debug for tokenizers
+    //for(Tokens t: Tokens.values())
     //  System.out.println(t);
-    //}
-
-    // Set up regex for all tokens in language
+    
+    // set up regex for all tokens in language
     String commRegex = "[//][\\p{Print}&&[^\n]]*";
     String identRegex = "[a-zA-Z][a-zA-Z0-9]*";
     String intRegex = "[\\-\\+]?[0-9]+";
@@ -41,11 +41,11 @@ public class LexicalAnalyzer{
     String divRegex = "/";
     String lPaRegex = "\\(";
     String rPaRegex = "\\)";
-
-    // Regex for any token in the language
+    
+    // regex for any token in the language
     String regexp = commRegex + "|" + identRegex + "|" + floRegex + "|" + intRegex + "|" + assignRegex + "|" + addRegex + "|" + subRegex + "|" + mulRegex + "|" + divRegex + "|" + lPaRegex + "|" + rPaRegex;
-
-    // Pattern matcher (or FSM) for each regular expression
+    
+    // pattern matcher (or FSM) for each regular expression
     Pattern commP = Pattern.compile(commRegex);
     Pattern identP = Pattern.compile(identRegex);
     Pattern intP = Pattern.compile(intRegex);
@@ -58,16 +58,15 @@ public class LexicalAnalyzer{
     Pattern lPaP = Pattern.compile(lPaRegex);
     Pattern rPaP = Pattern.compile(rPaRegex);
     Pattern anyP = Pattern.compile(regexp);
-
-
-    // Get a line from the user to analyze
+    
+    // get a line from the user to analyze
     List<String> lines = new LinkedList<String>();
     Scanner s = new Scanner(System.in);
     System.out.println("");
     System.out.print("> ");
     String in = s.nextLine();
-
-    // Create object to match patterns in input string
+    
+    // create object to match patterns in input string
     Matcher commM = commP.matcher(in);
     Matcher identM = identP.matcher(in);
     Matcher intM = intP.matcher(in);
@@ -80,19 +79,19 @@ public class LexicalAnalyzer{
     Matcher lPaM = lPaP.matcher(in);
     Matcher rPaM = rPaP.matcher(in);
     Matcher anyM = anyP.matcher(in);
-
-    // Scan through string, categorizing the pieces,
+    
+    // scan through string, categorizing the pieces,
     // and print out the lexical analysis
     boolean success = anyM.find();
     while(success){
-
+      
       // get start and end indices of current token
       int start = anyM.start();
       int end = anyM.end();
-
+      
       // grab the matching sub-string
       String lex = anyM.group();
-
+      
       // matcher focus to the sub-string
       commM.region(start, end);
       identM.region(start, end);
@@ -105,7 +104,7 @@ public class LexicalAnalyzer{
       divM.region(start, end);
       lPaM.region(start, end);
       rPaM.region(start, end);
-
+      
       // find matching pattern & assign type
       Tokens type = Tokens.UNRECOGNIZED;
       if(commM.matches()){
@@ -131,16 +130,15 @@ public class LexicalAnalyzer{
       }else if(rPaM.matches()){
         type = Tokens.RIGHT_PARENTHESIS;
       }
-
+      
       // print out token
       System.out.println("index = " + start + " type =  " + type + " lexeme = \"" + lex + "\"");
-
+      
       // are there any more tokens left?
       success = anyM.find();
     }
-
+    
     // Close scanner
     s.close();
-
   }
 }

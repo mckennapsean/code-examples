@@ -1,3 +1,7 @@
+// by Sean McKenna
+// creates a simple picture from a few shapes
+// works with Simple.java
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;

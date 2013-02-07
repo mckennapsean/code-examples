@@ -1,3 +1,7 @@
+// by Sean McKenna
+// creates a simple animated object / shape
+// works with Simple.java
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Shape;

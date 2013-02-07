@@ -47,3 +47,8 @@ for Linux, you can use the provided bash script
 > >  cd **Algorithms**
 
 > >  ./../run.sh **caesarCipher**
+
+Credit
+------
+
+**Leon Tabak** for inspiring *DataStructures/binarySearchTree.c*, *DataStructures/stack.c*, & *Language/macros.c*

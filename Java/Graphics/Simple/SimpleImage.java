@@ -1,3 +1,7 @@
+// by Sean McKenna
+// inputs an image into Java 2D
+// works with Simple.java
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;

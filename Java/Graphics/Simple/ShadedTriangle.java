@@ -1,8 +1,6 @@
 // by Sean McKenna on April 6th, 2011
-//
-//ShadedTriangle.java interacts using Simple.java to create a shaded triangle
-//with the parameters as described below (coordinates, colors, etc.)
-//
+// creates a shaded triangle
+// works with Simple.java
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;

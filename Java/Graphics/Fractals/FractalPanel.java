@@ -1,3 +1,7 @@
+// by Sean McKenna
+// generates a GUI for displaying the fractal
+// works with Fractals.java
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -13,9 +17,6 @@ public class FractalPanel extends JPanel implements ActionListener{
 
   public FractalPanel(BufferedImage im){
     super(new BorderLayout());
-    JToolBar toolBar = new JToolBar("Still draggable");
-    addButtons(toolBar);
-    add(toolBar, BorderLayout.PAGE_START);
     fractalImage = im;
   }
 
@@ -28,14 +29,5 @@ public class FractalPanel extends JPanel implements ActionListener{
     super.paintComponent(g);
     Graphics2D g2d = (Graphics2D) g;
     g2d.drawImage(fractalImage,0,0,this);
-  }
-
-  protected void addButtons(JToolBar toolBar) {
-    JButton button1 = null;
-    button1 = new JButton("Button 1");
-    button1.setActionCommand("Button 1");
-    button1.setToolTipText("This is button 1.");
-    button1.addActionListener(this);
-    toolBar.add(button1);
   }
 }
