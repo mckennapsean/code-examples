@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 // image processing input
-public class ImageReadWrite extends JFrame {
+public class ImageReadWrite extends JFrame{
   
   // window attributes
   private final static int FRAME_WIDTH = 512;
