@@ -69,7 +69,8 @@ Program List
 
 *Styles*
 
--  any necessary styles or files for LaTeX compilation
+-  only included to generate certain LaTeX files
+    - NOT covered by the sample code's license
 
 Compiling & Running Code
 ------------------------
