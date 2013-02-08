@@ -1,27 +1,31 @@
 % by Sean McKenna
+% general sample of a presentation
 
+%%% DOCUMENT TYPE
 \documentclass{beamer}
+
+%%% PRESENTATION THEME
 \usetheme{Madrid}
 \setbeamercovered{invisible}
 \setbeamertemplate{navigation symbols}{}
+
+%%% PACKAGES
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[sort,compress,comma,super]{natbib}
 \bibliographystyle{apalike}
 
 %%% CUSTOM COMMANDS
-% define commands for super and sub scripts in text
-\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
-\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
-%for natbib & beamer to kill error
+% for natbib & beamer to kill error
 \def\newblock{\hskip .11em plus .33em minus .07em}
 
+%%% TITLE INFO
 \title{Sample Presentation}
 \author{Sean McKenna}
 \institute[University of Utah]{ University of Utah \\ \medskip {\emph{mckennapsean@gmail.com}} }
 \date{\today}
 
-
+%%% BEGIN PRESENTATION
 \begin{document}
 
 

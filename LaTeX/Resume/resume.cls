@@ -1,3 +1,8 @@
+% included by Sean McKenna
+% works with resume.tex to generate a resume
+% NOT covered in the sample code's license
+% not intended to be used alone
+
 % RESUME DOCUMENT STYLE -- Released 23 Nov 1989
 %    for LaTeX version 2.09
 % Copyright (C) 1988,1989 by Michael DeCorte

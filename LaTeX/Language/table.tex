@@ -1,0 +1,61 @@
+% by Sean McKenna
+% several different sample tables
+% not intended to be compiled alone
+
+% define commands for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% sample tables
+
+\begin{center}
+\begin{tabular}{l||r|}
+  \hline
+  B\sub{1g} & 1 \\ \hline
+  B\sub{2g} & 1 \\ \hline
+  E\sub{1g} & 1 \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{l||r|r|r|r|}
+  \hline
+  & E & C\sub{2} & $\sigma$\sub{xz} & $\sigma$\sub{yz} \\ \hline \hline
+  A\sub{1} & 1 & 1 & 1 & 1 \\ \hline
+  A\sub{2} & 1 & 1 & -1 & -1 \\ \hline
+  B\sub{1} & 1 & -1 & 1 & -1 \\ \hline
+  B\sub{2} & 1 & -1 & -1 & 1 \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{r|c|c|c|c|}
+  & E & C\sub{2} & i & $\sigma$\sub{h} \\ \hline \hline
+  \textbf{x} & 1 & -1 & -1 & 1 \\ \hline
+  \textbf{y} & 1 & -1 & -1 & 1 \\ \hline
+  \textbf{z} & 1 & 1 & -1 & -1 \\
+  \hline
+\end{tabular}
+\end{center}
+
+% large (13x13) table
+\begin{center}
+\begin{tabular}{l||r|r|r|r|r|r|r|r|r|r|r|r|}
+  & E & 2C\sub{6} & 2C\sub{3} & C\sub{2} & 3C\sub{2}\super{'} & 3C\sub{2}\super{''} & i & 2S\sub{3} & 2S\sub{6} & $\sigma$\sub{h} & 3$\sigma$\sub{d} & 3$\sigma$\sub{v} \\ \hline \hline
+  A\sub{1g} & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+  A\sub{2g} & 1 & 1 & 1 & 1 & -1 & -1 & 1 & 1 & 1 & 1 & -1 & -1 \\ \hline
+  B\sub{1g} & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 \\ \hline
+  B\sub{2g} & 1 & -1 & 1 & -1 & -1 & 1 & 1 & -1 & 1 & -1 & -1 & 1 \\ \hline
+  E\sub{1g} & 2 & 1 & -1 & -2 & 0 & 0 & 2 & 1 & -1 & -2 & 0 & 0 \\ \hline
+  E\sub{2g} & 2 & -1 & -1 & 2 & 0 & 0 & 2 & -1 & -1 & 2 & 0 & 0 \\ \hline
+  A\sub{1u} & 1 & 1 & 1 & 1 & 1 & 1 & -1 & -1 & -1 & -1 & -1 & -1 \\ \hline
+  A\sub{2u} & 1 & 1 & 1 & 1 & -1 & -1 & -1 & -1 & -1 & -1 & 1 & 1 \\ \hline
+  B\sub{1u} & 1 & -1 & 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 & -1 & 1 \\ \hline
+  B\sub{2u} & 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 & -1 & 1 & 1 & -1 \\ \hline
+  E\sub{1u} & 2 & 1 & -1 & -2 & 0 & 0 & -2 & -1 & 1 & 2 & 0 & 0 \\ \hline
+  E\sub{2u} & 2 & -1 & -1 & 2 & 0 & 0 & -2 & 1 & 1 & -2 & 0 & 0 \\
+  \hline
+\end{tabular}
+\end{center}

@@ -1,0 +1,72 @@
+% by Sean McKenna
+% matrices and vectors for linera algebra
+% not intended to be compiled alone
+
+
+% for vectors in 3D
+
+% addition of vectors
+\vec{u} & = (u_x, u_y, u_z) \\
+\vec{v} & = (v_x, v_y, v_z) \\
+\vec{u} + \vec{v} & = (u_x + v_x, u_y + v_y, u_z + v_z)
+
+% subtraction of vectors
+\vec{u} & = (u_x, u_y, u_z) \\
+\vec{v} & = (v_x, v_y, v_z) \\
+\vec{u} - \vec{v} & = (u_x - v_x, u_y - v_y, u_z - v_z)
+
+% vector dot product
+\vec{u} & = (u_x, u_y, u_z) \\
+\vec{v} & = (v_x, v_y, v_z) \\
+\vec{u} \cdot \vec{v} & = (u_x * v_x) + (u_y * v_y) + (u_z * v_z)
+
+% vector magnitude
+\vec{u} & = (u_x, u_y, u_z) \\
+| \vec{u} | & = \sqrt{(u_x)^2 + (u_y)^2 + (u_z)^2}
+
+% vector cross product
+\vec{u} & = (u_x, u_y, u_z) \\
+\vec{v} & = (v_x, v_y, v_z) \\
+\vec{u} \times \vec{v} & = ((u_y * v_z) - (u_z * v_y), (u_z * v_x) - (u_x * v_z), (u_x * v_y) - (u_y * v_x))
+
+% several sample matrices
+\begin{align*}
+  \left[\begin{array}{ccc}
+    -1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & -1
+  \end{array}\right]
+\end{align*}
+
+\begin{align*}
+  \left[\begin{array}{ccc}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & -1
+  \end{array}\right]
+\end{align*}
+
+\begin{align*}
+  \left[\begin{array}{ccc}
+    -1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 1
+  \end{array}\right]
+\end{align*}
+
+% matrix multiplication for 2x2 matrices
+\begin{align*}
+  \left[\begin{array}{rr}
+    a & b \\
+    c & d
+  \end{array} \right]
+  \left[\begin{array}{rr}
+    e & f \\
+    g & h
+  \end{array} \right]
+  & = 
+  \left[\begin{array}{rr}
+    a*e + b*g & a*f + b*h \\
+    c*e + d*g & c*f + d*h
+  \end{array} \right]
+\end{align*}

@@ -1,8 +1,11 @@
 % by Sean McKenna
+% notebook, journal style
+% compiles many documents into one
 
+%%% DOCUMENT TYPE
 \documentclass[11pt,a4paper]{scrreprt}
 
-% packages, adjust as needed
+%%% PACKAGES
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{makeidx}
@@ -10,25 +13,25 @@
 \usepackage{hyperref}
 \setlength{\parindent}{0pt}
 
-% define commands for super and sub scripts in text
-\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
-\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+%%% CUSTOM COMMANDS
 
 \begin{document}
 
+%%% TITLE INFO
 \author{Sean McKenna} 
 \title{Sample Notebook} 
 \date{\today} 
 
+%%% BEGIN NOTEBOOK
 \maketitle
 \tableofcontents
 
 % if you want to only process file X
 % \includeonly{X}
 
-% new include for each date
-\include{day1}
-\include{day2}
-\include{day3}
+% new include for each date / file
+\include{notebook-1}
+\include{notebook-2}
+\include{notebook-3}
 
 \end{document}

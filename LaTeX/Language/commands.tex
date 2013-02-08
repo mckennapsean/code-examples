@@ -1,0 +1,16 @@
+% by Sean McKenna
+% collection of some useful commands for LaTeX files
+% not intended to be used alone
+
+% for super and sub scripts in text
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% for creating comments in-line with text
+\usepackage{color}
+\definecolor{cm_green}{rgb}{0.553, 0.827, 0.780}
+\definecolor{cm_purple}{rgb}{0.645, 0.629, 0.755}
+\definecolor{cm_red}{rgb}{0.984, 0.502, 0.447}
+\newcommand{\commentone}[1]{\textcolor{cm_green}{#1}}
+\newcommand{\commenttwo}[1]{\textcolor{cm_purple}{#1}}
+\newcommand{\commentthree}[1]{\textcolor{cm_red}{#1}}
