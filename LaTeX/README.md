@@ -9,6 +9,20 @@ Program List
 -  **bibliography**.bib
     - includes one of each common type of reference
 
+*Documents*
+
+-  **notebook**.tex
+    - a document compiled from smaller ones (like a notebook or journal)
+-  **paper**.tex
+    - general sample of a two-column paper
+-  **presentation**.tex
+    - general sample of a presentation
+-  **report**.tex
+    - general sample of a report (not a two-column layout)
+-  **resume**.tex
+    - general sample of a resume
+    - style by **Michael DeCorte** (*resume.cls*)
+
 *Language*
 
 -  **commands**.tex
@@ -19,32 +33,6 @@ Program List
     - matrices and vectors for linera algebra
 -  **table**.tex
     - several different sample tables
-
-*Notebook*
-
--  **notebook**.tex
-    - a document compiled from smaller ones (like a notebook or journal)
-
-*Paper*
-
--  **paper**.tex
-    - general sample of a two-column paper
-
-*Presentation*
-
--  **presentation**.tex
-    - general sample of a presentation
-
-*Report*
-
--  **report**.tex
-    - general sample of a report (not a two-column layout)
-
-*Resume*
-
--  **resume**.tex
-    - general sample of a resume
-    - style by **Michael DeCorte** (*resume.cls*)
 
 Compiling & Running Code
 ------------------------
