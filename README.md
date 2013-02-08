@@ -41,3 +41,5 @@ Credit
     - **Jerome Cukier**, **Jeff Heer**, & **Scott Murray**
 -  Java
     - **Leon Tabak**, **Tony deLaubenfels**, **Adam Reed**, & JHAVE
+-  LaTeX
+    - **Michael DeCorte**
