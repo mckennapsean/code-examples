@@ -36,7 +36,7 @@ Program List
     - cute 2D changing city environment
 -  **Clipping**.java
     - implementation of the Sutherland-Hodgman clipping algorithm
-    - credit goes to the JHAVE project
+    - several files in the *Clipping/* folder are NOT covered by the sample code's license
 -  **Faces**.java
     - draw some 2D faces
 -  **Fractals**.java

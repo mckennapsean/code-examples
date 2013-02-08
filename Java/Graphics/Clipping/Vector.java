@@ -1,8 +1,3 @@
-// included by Sean McKenna
-// this file is under the GPL license
-// it is ONLY in this sample code to run Clipping.java 
-// this file is NOT covered in the sample code's license
-
 /* 
    This file is part of JHAVE -- Java Hosted Algorithm Visualization
    Environment, developed by Tom Naps, David Furcy (both of the
