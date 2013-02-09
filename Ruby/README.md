@@ -31,8 +31,7 @@ Compiling & Running Code
 ------------------------
 
 run them using the command-line version of Ruby
-
->  e.g. for document: **hello.rb**
+>  e.g. for program: **hello.rb**
 
 > >  cd **Language/**
 
