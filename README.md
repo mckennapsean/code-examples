@@ -45,3 +45,7 @@ Credit
     - **Michael DeCorte**
 -  Processing
     - **Casey Reas**, **Ben Fry**, & **John Resig**
+-  Ruby
+    - **Leon Tabak**
+-  SQL
+    - **David Adrian** & **Nancy Decker**
