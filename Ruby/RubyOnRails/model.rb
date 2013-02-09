@@ -1,4 +1,6 @@
-# by Sean McKenna, for Ruby on Rails
+# by Sean McKenna
+# Ruby on Rails, model component of MVC framework
+# not intended to be used alone
 
 class Video < ActiveRecord::Base
   attr_accessible :embed_code, :title

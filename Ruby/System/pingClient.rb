@@ -1,10 +1,10 @@
 # by Sean McKenna on May 16th, 2010
-# pingclient.rb aims to create a UDP pinging client in Ruby.
-# It is to be used with UDPPingServer.java, for  CSC-317, a Java UDP server for pinging.
+# creates a UDP ping client
+# can be paired with Java/System/UDPPingServer.java for testing
 
 require 'socket'
 
-#server information: IP address, port number, and timeout
+# server information: IP address, port number, & timeout
 SERVER = "127.0.0.1"
 PORT = 1234
 TIMEOUT = 1
@@ -14,18 +14,18 @@ class UDPPingClient
 		@seq = seq
 		@time_start = Time.now
 	end
-
-	#send out and process all the pings
+	
+	# send out and process all the pings
 	def request
-
-		#send initial UDP ping packet
+		
+		# send initial UDP ping packet
 		socket = nil
 		str = "PING "+@seq+" "+@time_start.to_f.to_s+"\r\n"
 		begin
 			socket = UDPSocket.open
 			socket.send(str,0,SERVER,PORT)
-
-			#receive packet (if not dropped) and calculate the RTT
+			
+			# receive packet (if not dropped) and calculate the RTT
 			@test = 0
 			while (Time.now.to_f - @time_start.to_f) < 1
 				if select([socket],nil,nil,TIMEOUT)
@@ -35,12 +35,12 @@ class UDPPingClient
 					@test = 1
 				end
 			end
-
-			#output to client with RTT in ms
+			
+			# output to client with RTT in ms
 			puts "PING "+@seq+" Timeout - Network Error\r\n\r\n" if @test == 0
 			puts "PING "+@seq+" "+@rtt+" ms\r\n\r\n" if @test == 1
-
-		#cleanup
+			
+		# cleanup
 		rescue IOError, SystemCallError
 		ensure
 			socket.close if socket
@@ -48,7 +48,7 @@ class UDPPingClient
 	end
 end
 
-#execution of program, ping a total of 10 times
+# execution of program, ping a total of 10 times
 for ct in 0..9 do
 	count = ct.to_s
 	UDPPingClient.new(count).request

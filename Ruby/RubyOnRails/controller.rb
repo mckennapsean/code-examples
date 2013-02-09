@@ -1,4 +1,6 @@
-# by Sean McKenna, for Ruby on Rails
+# by Sean McKenna
+# Ruby on Rails, controller component of MVC framework
+# not intended to be used alone
 
 class VideosController < ApplicationController
   # GET /videos
