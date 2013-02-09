@@ -4,15 +4,11 @@ Scala - Sample Code
 Program List
 ------------
 
-Koans
-  contains all the complete Scala Koans
-
-Polyhedron
-  collection of classes to establish a polyhedron
-
-
 *Language*
 
+-  **CreatePoly**.scala
+    - create a polyhedron that is sub-divided a set amount of times
+    - has a custom run script in the *CreatePoly* folder
 -  **ForLoop**.scala
     - hello world, inside a backward for loop
 -  **HelloWorld**.scala
@@ -27,8 +23,3 @@ for Linux, you can use the provided bash script
 > >  cd **Language/**
 
 > >  ./../run.sh **ForLoop**
-
-Credit
-------
-
-??

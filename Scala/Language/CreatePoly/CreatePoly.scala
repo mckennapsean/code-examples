@@ -1,7 +1,7 @@
-// Runs to create a polyhedron in 3-D space by Sean McKenna
-// Input an int to subdivide, Ruby code from Leon
+// by Sean McKenna
+// create a polyhedron that is sub-divided a set amount of times
 
-// Create polyhedron, subdivide, and output
+// create polyhedron, subdivide, and output
 object CreatePoly{
   def main(args: Array[String]){
     val arg = args.toList
