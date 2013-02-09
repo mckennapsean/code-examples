@@ -1,29 +1,28 @@
 # by Sean McKenna
-# convert data from one CSV format to STScI database input files, meant to modify the JPL ephemeris data and
-# take what is needed to bring into the Planet Pipeline database
+# convert from several CSV to STScI database input files
 
-# Defines the CSV data filenames
-inFile = "processed_fits_catalog_v3.3.csv"
+# defines the CSV data filenames
+inFile = "processed.csv"
 outFile = "processed_targets.csv"
 outFile2 = "processed_pp.csv"
 piFile = "pi.csv"
 descrFile = "descr.csv"
 
-# Necessary imports
+# necessary imports
 import csv
 import time
 
-# Start timer
+# start timer
 start = time.time()
 
-# Number of error iterations
+# number of error iterations
 iter = 0
 
-# Get the CSV data file as input
+# get the CSV data file as input
 input = open(inFile, "rU")
 reader = csv.reader(input)
 
-# Prep output file/s
+# prep output file/s
 output = open(outFile, "wb")
 output2 = open(outFile2, "wb")
 writer = csv.writer(output)
@@ -32,7 +31,7 @@ writer2 = csv.writer(output2)
 # initialize row variable
 firstPass = 1
 
-# Process CSV file, row-by-row
+# process CSV file, row-by-row
 for row in reader:
 
   # open CSV files to process PI name and target descriptions
@@ -193,19 +192,19 @@ for row in reader:
   # close the PI file
   inputPI.close()
 
-# Close all files
+# close all files
 input.close()
 output.close()
 output2.close()
 
-# Stop timer
+# stop timer
 end = time.time()
 
-# Process the time elapsed
+# process the time elapsed
 elapsed = end - start
 min = round(elapsed / 60, 3)
 
-# Display important info
+# display important info
 if iter == 1:
   print "There was " + str(iter) + " error."
 elif iter == 0:

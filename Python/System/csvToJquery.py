@@ -1,22 +1,21 @@
 # by Sean McKenna
-# convert target data from one CSV format
-# to the necessary array input for the Jquery autocomplete search
+# convert from CSV to Jquery autocomplete search format
 
-# Defines the CSV data filenames
+# defines the CSV data filenames
 inFile = "target-names.csv"
 outFile = "target-names-search.txt"
 
-# Necessary imports
+# necessary imports
 import csv
 
-# Get the CSV data file as input
+# get the CSV data file as input
 input = open(inFile, "rU")
 reader = csv.reader(input)
 
-# Prep output file/s
+# prep output file/s
 output = open(outFile, "wb")
 
-# Process CSV file, row-by-row
+# process CSV file, row-by-row
 start = 0
 for row in reader:
 
@@ -28,8 +27,9 @@ for row in reader:
   else:
     start = 1
 
-# Close all files
+# close all files
 input.close()
 output.close()
 
+# output success
 print "Search array generation complete!"
