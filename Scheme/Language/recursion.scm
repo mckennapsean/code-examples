@@ -1,4 +1,5 @@
 ;; by Sean McKenna
+;; recursively searching through a list
 
 (define numbers '(1 2 3 4 5 6))
 

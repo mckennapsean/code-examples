@@ -1,8 +1,7 @@
 ;; by Sean McKenna
-;; Harmonic series
-;; Takes the input of n and an empty list
-;; Sums the reciprocals to create harmonic series
+;; implementation of generating a harmonic series
 
+;; definition of harmonic series (recursive)
 (define (harmonic n l)
   (if (eq? n 0)
     (display (apply + l))
@@ -10,7 +9,7 @@
   )
 )
 
-;; Test functions
+;; test functions
 (harmonic 1 '())
 (newline)
 (harmonic 2 '())

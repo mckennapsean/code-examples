@@ -1,4 +1,5 @@
 ;; by Sean McKenna
+;; generating custom functions
 
 (define A '(0 1 2 3))
 (define B '(4 5 6 7))
