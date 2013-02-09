@@ -43,3 +43,5 @@ Credit
     - **Leon Tabak**, **Tony deLaubenfels**, **Adam Reed**, & JHAVE
 -  LaTeX
     - **Michael DeCorte**
+-  Processing
+    - **Casey Reas**, **Ben Fry**, & **John Resig**

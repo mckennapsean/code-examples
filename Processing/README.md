@@ -50,4 +50,4 @@ Credit
 ------
 
 **Casey Reas** and **Ben Fry** for most of the *Tutorials/*
-Processing.js for inspiring *Tutorials/snake.pde*
+**John Resig** for inspiring *Tutorials/snake.pde*
