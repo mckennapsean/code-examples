@@ -4,14 +4,33 @@ Processing - Sample Code
 Program List
 ------------
 
-checkers.pde - alternates colors on a checker board
-clock.pde - working clock that keeps time
-eyesFollow.pde - many eyes that follow mouse movement
-framework.pde - event-driven framework (e.g. for a game)
-interactiveRect.pde - rectangles that adjust size with the mouse
-paint.pde - a paint brush blurs out on the screen
-snake.pde - importing graphics in Processing
-test.pde - simple test of a few Processing features
+*Graphics*
+
+-  **checkers**.pde
+    - generates a chess/checkers board with alternating colors based on mouse position
+-  **simple**.pde
+    - some simple drawing & line effects
+
+*Language*
+
+-  ?
+
+*System*
+
+-  ?
+
+*Tutorials*
+
+-  **brush**.pde
+    - cool paint-brush effect on the canvas
+-  **clock**.pde
+    - creates a working clock on the screen
+-  **eyes**.pde
+    - moving eyes which follow the mouse
+-  **rectangles**.pde
+    - adjustable rectangles, based on mouse position
+-  **snake**.pde
+    - interactive snake cursor exploring a canvas image
 
 Compiling & Running Code
 ------------------------
@@ -30,4 +49,5 @@ just copy and paste the examples in to the IDE to run
 Credit
 ------
 
-???
+**Casey Reas** and **Ben Fry** for most of the *Tutorials/*
+Processing.js for inspiring *Tutorials/snake.pde*

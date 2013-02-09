@@ -1,7 +1,7 @@
 // by Sean McKenna
-// Checkerboard program, generates a chess/checkers board
-// then alternates the colors on the board based on the mouse
+// generates a chess/checkers board with alternating colors based on mouse position
 
+// for storing Java shapes in lists
 import java.awt.geom.Point2D;
 import java.awt.Rectangle;
 
