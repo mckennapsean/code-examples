@@ -14,9 +14,9 @@ Programming Languages
 -  Processing
 -  Python
 -  Ruby
+-  SQL
 -  Scala
 -  Scheme
--  SQL
 
 Folder Structure
 ----------------
