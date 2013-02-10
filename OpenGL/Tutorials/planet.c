@@ -1,3 +1,8 @@
+// by Sean McKenna
+// from the OpenGL Redbook
+// creates a simple 3D solar system, with keyboard interactions
+// use the 'd' and 'y' keys to interact with the environment
+
 #include <GL/glut.h>
 
 static int year = 0, day = 0;

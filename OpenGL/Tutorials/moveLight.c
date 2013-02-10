@@ -1,3 +1,7 @@
+// by Sean McKenna
+// from the OpenGL Redbook
+// a moving light around a torus
+
 #include <GL/glut.h>
 
 static int spin = 0;

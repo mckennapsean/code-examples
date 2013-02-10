@@ -1,3 +1,6 @@
+// by Sean McKenna
+// a simple triangle blending colors across each of the points
+
 #include <stdio.h>
 #include "GL/glew.h"
 #include "GL/freeglut.h"
@@ -5,8 +8,7 @@
 void display();
 void keyboard(unsigned char key, int x, int y);
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]){
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
   glutInitWindowSize(300, 300);
@@ -28,8 +30,7 @@ int main(int argc, char* argv[])
   return 0;
 }
 
-void display()
-{
+void display(){
   glClear(GL_COLOR_BUFFER_BIT);
 
   gluOrtho2D(-1.0, 1.0, -1.0, 1.0);

@@ -1,3 +1,6 @@
+// by Sean McKenna
+// a GUI using OpenGL with GLUT and GLUI
+
 #include <stdio.h>
 #include <iostream>
 #include "GL/glew.h"
@@ -7,7 +10,7 @@
 
 using namespace std;
 
-int	main_window;
+int  main_window;
 
 // camera info
 float eye[3];
@@ -15,15 +18,15 @@ float lookat[3];
 
 // pointers for all of the GLUI controls
 GLUI *glui;
-GLUI_Rollout		*object_rollout;
-GLUI_RadioGroup		*object_type_radio;
-GLUI_Rotation		*object_rotation;
-GLUI_Translation	*object_xz_trans;
-GLUI_Translation	*object_y_trans;
+GLUI_Rollout    *object_rollout;
+GLUI_RadioGroup    *object_type_radio;
+GLUI_Rotation    *object_rotation;
+GLUI_Translation  *object_xz_trans;
+GLUI_Translation  *object_y_trans;
 
 // other controls
-GLUI_Rollout		*anim_rollout;
-GLUI_Button			*action_button;
+GLUI_Rollout    *anim_rollout;
+GLUI_Button      *action_button;
 GLUI_Checkbox *draw_floor_check;
 GLUI_Checkbox *draw_object_check;
 
@@ -95,7 +98,7 @@ int last_y;
 void myGlutMouse(int button, int state, int x, int y){
   if (state == GLUT_DOWN)
     cur_button = button;
-	else{
+  else{
     if(button == cur_button)
       cur_button = -1;
   }
@@ -326,7 +329,7 @@ void init( void){
 }
 
 // main running method
-int main(int argc,	char* argv[]){ 
+int main(int argc,  char* argv[]){ 
   // set up GLUT
   glutInit(&argc, argv);
   

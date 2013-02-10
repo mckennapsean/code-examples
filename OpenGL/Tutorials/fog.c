@@ -1,3 +1,7 @@
+// by Sean McKenna
+// from the OpenGL Redbook
+// generates a steadily increasing fog in a scene
+
 #include <stdio.h>
 #include <GL/glut.h>
 

@@ -1,3 +1,7 @@
+// by Sean McKenna
+// from the OpenGL Redbook
+// simple square with mouse interactions
+
 #include <GL/glut.h>
 
 static GLfloat spin = 0.0;
@@ -41,7 +45,7 @@ void mouse(int button, int state, int x, int y){
       if(state == GLUT_DOWN)
         glutIdleFunc(spinDisplay);
       break;
-
+      
     case GLUT_MIDDLE_BUTTON:
       if(state == GLUT_DOWN)
         glutIdleFunc(NULL);
