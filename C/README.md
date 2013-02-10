@@ -18,6 +18,10 @@ Program List
 -  **stack**.c
     - stack implementation
 
+*Graphics*
+
+-  check the **OpenGL** folder for graphics samples in C
+
 *Language*
 
 -  **circle**.c
