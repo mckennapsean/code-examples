@@ -8,16 +8,20 @@ Program List
 
 -  **checkers**.pde
     - generates a chess/checkers board with alternating colors based on mouse position
+-  **manyPoints**.pde
+    - use OpenGL to display many points on the screen
 -  **simple**.pde
     - some simple drawing & line effects
 
 *Language*
 
--  ?
+-  **Interpolator**.pde
+    - interpolates between values for animation-effects
 
 *System*
 
--  ?
+-  **FloatTable**.pde
+    - stores data file in a simple table of floats
 
 *Tutorials*
 
@@ -32,22 +36,24 @@ Program List
 -  **snake**.pde
     - interactive snake cursor exploring a canvas image
 
+*Visualization*
+
+-  **parallelCoordinates**.pde
+    - displays a data set using parallel coordinates
+-  **timeSeries**.pde
+    - displays some time-series data using a simple line chart
+
 Compiling & Running Code
 ------------------------
 
-download the [Processing IDE](http://processing.org/)
+download the [Processing v.2.0 IDE](http://processing.org/) 
 
 just copy and paste the examples in to the IDE to run
-
-#for Linux, you can use the provided bash script
-#>  e.g. for document: **resume.tex**
-#
-#> >  cd **Resume/**
-#
-#> > ./../run.sh **resume**
 
 Credit
 ------
 
+**Miriah Meyer** and **Ben Fry** for inspiring *Language/Interpolator.pde*
+**Ben Fry** for inspiring *System/FloatTable.pde* & *Visualization/timeSeries.pde*
 **Casey Reas** and **Ben Fry** for most of the *Tutorials/*
 **John Resig** for inspiring *Tutorials/snake.pde*

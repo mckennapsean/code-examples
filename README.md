@@ -44,7 +44,7 @@ Credit
 -  LaTeX
     - **Michael DeCorte**
 -  Processing
-    - **Casey Reas**, **Ben Fry**, & **John Resig**
+    - **Miriah Meyer**, **Casey Reas**, **Ben Fry**, & **John Resig**
 -  Ruby
     - **Leon Tabak**
 -  SQL
