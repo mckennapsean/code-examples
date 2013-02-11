@@ -50,7 +50,7 @@ for Linux, you can use the provided bash script
 
 > >  cd **Algorithms**
 
-> >  ./../run.sh **caesarCipher**
+> >  ./../run **caesarCipher**
 
 Credit
 ------

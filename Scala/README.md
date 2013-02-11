@@ -22,4 +22,4 @@ for Linux, you can use the provided bash script
 
 > >  cd **Language/**
 
-> >  ./../run.sh **ForLoop**
+> >  ./../run **ForLoop**

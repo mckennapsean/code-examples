@@ -82,7 +82,7 @@ for Linux, you can use the provided bash script
 
 > >  cd **Graphics/Fractals/**
 
-> >  ./../../run.sh **Fractals**
+> >  ./../../run **Fractals**
 
 please note that some programs require Java 3D
 

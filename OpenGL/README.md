@@ -47,7 +47,7 @@ for Linux, you can use the provided bash script
 
 > >  cd **Language/**
 
-> >  ./../run.sh **triangle**
+> >  ./../run **triangle**
 
 for Windows (using Cygwin), you can use the following commands
 >  gcc -o FILE.exe FILE.c -lgl -lglu -lglut -lopengl32

@@ -44,7 +44,7 @@ for Linux, you can use the provided bash script
 
 > >  cd **Resume/**
 
-> > ./../run.sh **resume**
+> > ./../run **resume**
 
 Credit
 ------
