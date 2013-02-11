@@ -11,6 +11,7 @@ Programming Languages
 -  Java
 -  LaTeX
 -  OpenGL
+-  PHP
 -  Processing
 -  Python
 -  Ruby
