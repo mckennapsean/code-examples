@@ -67,6 +67,8 @@ Program List
 
 -  **ImageReadWrite**.java
     - input an image into Java
+-  **inputOutput**.java
+    - takes basic input (integers, line-by-line) to output sums
 -  **UDPPingServer**.java
     - open a server for pinging via UDP
 -  **WebServer**.java
