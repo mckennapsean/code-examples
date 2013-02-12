@@ -1,5 +1,5 @@
-Collection of Sample Programs
-=============================
+Collection of Example Programs
+==============================
 
 This catalogue spans an assortment of programming languages, including sample code, demos, and tutorial programs.
 
