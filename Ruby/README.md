@@ -1,5 +1,5 @@
-Ruby - Sample Code
-==================
+Ruby - Examples
+===============
 
 Program List
 ------------

@@ -1,5 +1,5 @@
-SQL - Sample Code
-=================
+SQL - Examples
+==============
 
 Program List
 ------------

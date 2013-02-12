@@ -1,5 +1,5 @@
-C - Sample Code
-===============
+C - Examples
+============
 
 Program List
 ------------

@@ -1,5 +1,5 @@
-D3 - Sample Code
-================
+D3 - Examples
+=============
 
 Program List
 ------------

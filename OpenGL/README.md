@@ -1,5 +1,5 @@
-OpenGL - Sample Code
-====================
+OpenGL - Examples
+=================
 
 Program List
 ------------

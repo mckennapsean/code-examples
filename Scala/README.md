@@ -1,5 +1,5 @@
-Scala - Sample Code
-===================
+Scala - Examples
+================
 
 Program List
 ------------

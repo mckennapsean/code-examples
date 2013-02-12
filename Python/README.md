@@ -1,5 +1,5 @@
-Python - Sample Code
-====================
+Python - Examples
+=================
 
 Program List
 ------------

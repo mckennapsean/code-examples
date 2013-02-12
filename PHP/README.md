@@ -1,5 +1,5 @@
-PHP - Sample Code
-=================
+PHP - Examples
+==============
 
 Program List
 ------------

@@ -1,5 +1,5 @@
-LaTeX - Sample Code
-===================
+LaTeX - Examples
+================
 
 Program List
 ------------

@@ -1,5 +1,5 @@
-Java - Sample Code
-==================
+Java - Examples
+===============
 
 Program List
 ------------

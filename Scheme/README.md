@@ -1,5 +1,5 @@
-Scheme - Sample Code
-====================
+Scheme - Examples
+=================
 
 Program List
 ------------
