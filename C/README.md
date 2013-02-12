@@ -9,7 +9,7 @@ Program List
 -  **caesarCipher**.c
     - encode or decode from a text file
 
-[*Data Structures*](/C/Data Structures/)
+[*Data Structures*](/C/DataStructures/)
 
 -  **binarySearchTree**.c
     - binary search tree implementation

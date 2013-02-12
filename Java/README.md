@@ -23,7 +23,7 @@ Program List
 -  **Searching**.java
     - implementation of several search algorithms
 
-[*Data Structures*](/Java/Data Structures/)
+[*Data Structures*](/Java/DataStructures/)
 
 -  **Date**.java
     - format the input of a string to a date format, using Java objects and exceptions
