@@ -4,14 +4,14 @@ Ruby - Sample Code
 Program List
 ------------
 
-*Language*
+[*Language*](/Ruby/Language/)
 
 -  **hello**.rb
     - classic Hello, World program
 -  **polyhedron**.rb
     - several classes to abstract building a polyhedron and outputting it to SVG
 
-*Ruby on Rails*
+[*Ruby on Rails*](/Ruby/RubyOnRails/)
 
 -  **controller**.rb
     - Ruby on Rails, controller component of MVC framework
@@ -20,7 +20,7 @@ Program List
 -  **view**.erb
     - Ruby on Rails, view component of MVC framework (partially HTML)
 
-*System*
+[*System*](/Ruby/System/)
 
 -  **pingClient**.rb
     - creates a UDP ping client

@@ -4,25 +4,25 @@ OpenGL - Sample Code
 Program List
 ------------
 
-*Language*
+[*Language*](/OpenGL/Language/)
 
 -  **motion**.c
     - a constantly moving rectangle
 -  **triangle**.c
     - a simple triangle blending colors across each of the points
 
-*Shaders*
+[*Shaders*](/OpenGL/Shaders/)
 
 -  **shaders**.c
     - how to set up a shader in OpenGL (C)
     - includes sample shaders: base, gouraud, phong, texture-g, texture-p, & toon
 
-*System*
+[*System*](/OpenGL/System/)
 
 -  **gui**.c
     - a GUI using OpenGL with GLUT and GLUI
 
-*Tutorials*
+[*Tutorials*](/OpenGL/Tutorials/)
 
 -  **double**.c
     - simple square with mouse interactions

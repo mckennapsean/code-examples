@@ -4,7 +4,7 @@ Java - Sample Code
 Program List
 ------------
 
-*Algorithms*
+[*Algorithms*](/Java/Algorithms/)
 
 -  **Ananagrams**.java
     - calculate ananagrams from file input
@@ -23,14 +23,14 @@ Program List
 -  **Searching**.java
     - implementation of several search algorithms
 
-*Data Structures*
+[*Data Structures*](/Java/Data Structures/)
 
 -  **Date**.java
     - format the input of a string to a date format, using Java objects and exceptions
 -  **DaytimeProtocolClient**.java
     - grab the date from the internet
 
-*Graphics*
+[*Graphics*](/Java/Graphics/)
 
 -  **CityScape**.java
     - cute 2D changing city environment
@@ -50,7 +50,7 @@ Program List
 -  **Torus**.java
     - several rotating 3D toruses inside of each other, requires Java 3D
 
-*Language*
+[*Language*](/Java/Language/)
 
 -  **DNA**.java
     - GUI for coding DNA or translating to RNA
@@ -63,7 +63,7 @@ Program List
 -  **Nbits**.java
     - calculates how many N bits exist in two's complement
 
-*System*
+[*System*](/Java/System/)
 
 -  **ImageReadWrite**.java
     - input an image into Java

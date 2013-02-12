@@ -4,7 +4,7 @@ Scala - Sample Code
 Program List
 ------------
 
-*Language*
+[*Language*](/Scala/Language/)
 
 -  **CreatePoly**.scala
     - create a polyhedron that is sub-divided a set amount of times

@@ -6,18 +6,18 @@ This catalogue spans an assortment of programming languages, including sample co
 Programming Languages
 ---------------------
 
--  C
--  D3
--  Java
--  LaTeX
--  OpenGL
--  PHP
--  Processing
--  Python
--  Ruby
--  SQL
--  Scala
--  Scheme
+-  [C](/C/)
+-  [D3](/D3/)
+-  [Java](/Java/)
+-  [LaTeX](/LaTeX/)
+-  [OpenGL](/OpenGL/)
+-  [PHP](/PHP/)
+-  [Processing](/Processing/)
+-  [Python](/Python/)
+-  [Ruby](/Ruby/)
+-  [SQL](/SQL/)
+-  [Scala](/Scala/)
+-  [Scheme](/Scheme/)
 
 Folder Structure
 ----------------

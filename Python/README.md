@@ -4,12 +4,12 @@ Python - Sample Code
 Program List
 ------------
 
-*Algorithms*
+[*Algorithms*](/Python/Algorithms/)
 
 -  **kMeansCluster**.py
     - run k-means algorithm on TSV data file
 
-*Graphics*
+[*Graphics*](/Python/Graphics/)
 
 -  **imageConversion**.py
     - takes in many images as input, converting them based on CSV data
@@ -18,7 +18,7 @@ Program List
 -  **tree**.py
     - generate a network diagram (tree)
 
-*System*
+[*System*](/Python/System/)
 
 -  **csvToDatabase**.py
     - convert from several CSV to STScI database input files

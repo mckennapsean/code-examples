@@ -4,7 +4,7 @@ SQL - Sample Code
 Program List
 ------------
 
-*Language*
+[*Language*](/SQL/Language/)
 
 -  **samples**.sql
     - collection of various SQL queries, used in PHP code

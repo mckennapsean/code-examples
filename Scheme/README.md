@@ -4,17 +4,17 @@ Scheme - Sample Code
 Program List
 ------------
 
-*Algorithms*
+[*Algorithms*](/Scheme/Algorithms)
 
 -  **harmonic**.scm
     - implementation of generating a harmonic series
 
-*Data Structures*
+[*Data Structures*](/Scheme/DataStructures)
 
 -  **rational**.scm
     - implementation of a rational number data structure
 
-*Language*
+[*Language*](/Scheme/Language)
 
 -  **functions**.scm
     - generating custom functions

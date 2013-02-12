@@ -4,14 +4,14 @@ PHP - Sample Code
 Program List
 ------------
 
-*Language*
+[*Language*](/PHP/Language/)
 
 -  **contact**.php
     - a simple PHP email contact form
 -  **database**.php
     - how to connect to a MySQL database and a variety of database functions
 
-*System*
+[*System*](/PHP/System/)
 
 -  **info**.php
     - very basic, print out of the PHP server info

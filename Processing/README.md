@@ -4,7 +4,7 @@ Processing - Sample Code
 Program List
 ------------
 
-*Graphics*
+[*Graphics*](/Processing/Graphics/)
 
 -  **checkers**.pde
     - generates a chess/checkers board with alternating colors based on mouse position
@@ -13,17 +13,17 @@ Program List
 -  **simple**.pde
     - some simple drawing & line effects
 
-*Language*
+[*Language*](/Processing/Language/)
 
 -  **Interpolator**.pde
     - interpolates between values for animation-effects
 
-*System*
+[*System*](/Processing/System/)
 
 -  **FloatTable**.pde
     - stores data file in a simple table of floats
 
-*Tutorials*
+[*Tutorials*](/Processing/Tutorials/)
 
 -  **brush**.pde
     - cool paint-brush effect on the canvas
@@ -36,7 +36,7 @@ Program List
 -  **snake**.pde
     - interactive snake cursor exploring a canvas image
 
-*Visualization*
+[*Visualization*](/Processing/Visualization/)
 
 -  **parallelCoordinates**.pde
     - displays a data set using parallel coordinates

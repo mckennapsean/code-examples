@@ -4,12 +4,12 @@ LaTeX - Sample Code
 Program List
 ------------
 
-*Bibliography*
+[*Bibliography*](/LaTeX/Bibliography/)
 
 -  **bibliography**.bib
     - includes one of each common type of reference
 
-*Documents*
+[*Documents*](/LaTeX/Documents/)
 
 -  **notebook**.tex
     - a document compiled from smaller ones (like a notebook or journal)
@@ -23,7 +23,7 @@ Program List
     - general sample of a resume
     - style by **Michael DeCorte** (*resume.cls*)
 
-*Language*
+[*Language*](/LaTeX/Language/)
 
 -  **commands**.tex
     - collection of some useful commands for LaTeX files

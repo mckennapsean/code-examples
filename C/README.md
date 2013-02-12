@@ -4,12 +4,12 @@ C - Sample Code
 Program List
 ------------
 
-*Algorithms*
+[*Algorithms*](/C/Algorithms/)
 
 -  **caesarCipher**.c
     - encode or decode from a text file
 
-*Data Structures*
+[*Data Structures*](/C/Data Structures/)
 
 -  **binarySearchTree**.c
     - binary search tree implementation
@@ -18,11 +18,11 @@ Program List
 -  **stack**.c
     - stack implementation
 
-*Graphics*
+[*Graphics*](/C/Graphics/)
 
 -  check the **OpenGL** folder for graphics samples in C
 
-*Language*
+[*Language*](/C/Language/)
 
 -  **circle**.c
     - output points along a unit circle
@@ -35,7 +35,7 @@ Program List
 -  **pointer**.c
     - test C pointers
 
-*System*
+[*System*](/C/System/)
 
 -  **fileIO**.c
     - read from file
