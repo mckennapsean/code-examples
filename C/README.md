@@ -18,9 +18,9 @@ Program List
 -  **stack**.c
     - stack implementation
 
-[*Graphics*](/C/Graphics/)
+[*Graphics*](/OpenGL/)
 
--  check the **OpenGL** folder for graphics samples in C
+-  check the [**OpenGL** folder](/OpenGL/) for graphics samples in C
 
 [*Language*](/C/Language/)
 
