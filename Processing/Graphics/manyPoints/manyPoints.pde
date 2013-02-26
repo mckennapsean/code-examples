@@ -68,7 +68,7 @@ void makeRectangles(){
   gl2.glBegin(gl2.GL_POINTS);
   
   for(int n = 0; n < numPts; n++){
-	  gl2.glVertex2f(2 * (xInterpolator[n].value()) / w - 1, 2 * (yInterpolator[n].value()) / h - 1);
+	  gl2.glVertex2f(xInterpolator[n].value(), yInterpolator[n].value());
     
     // update interpolator to new position
     xInterpolator[n].update();
