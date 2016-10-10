@@ -42,7 +42,7 @@
 
 
 			//Define a scale for y axis values
-			var yScale = d3.scale.linear()
+			var yScale = d3.scaleLinear()
 								 .domain([0, d3.max(data, function(d) { return d.value; })])
 								 .range([0, 100]);
 
@@ -134,7 +134,7 @@
 			}
 			
 			//Execute this update function every two seconds
-			setInterval(update, 2000);
+			d3.interval(update, 2000);
 			
 			
 			

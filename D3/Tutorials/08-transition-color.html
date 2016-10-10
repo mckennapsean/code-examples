@@ -42,7 +42,7 @@
 
 
 			//Define a scale for y axis values
-			var yScale = d3.scale.linear()
+			var yScale = d3.scaleLinear()
 								 .domain([0, d3.max(data, function(d) { return d.value; })])
 								 .range([0, 100]);
 
@@ -88,16 +88,16 @@
 					.transition()
 					.duration(500)
 					.attr("fill", function() {
-						var r = Math.random() * 255;					//Choose random red, green, blue values
-						var g = Math.random() * 255;
-						var b = Math.random() * 255;
+						var r = Math.round(Math.random() * 255);					//Choose random red, green, blue values
+						var g = Math.round(Math.random() * 255);
+						var b = Math.round(Math.random() * 255);
 						return "rgb(" + r + "," + g + "," + b + ")";	//Set fill to rgb value
 					});
 
 			}
 			
 			//Execute the recoloring function every two seconds
-			setInterval(recolor, 2000);
+			d3.interval(recolor, 2000);
 
 			//NOTE:	CSS styles override SVG attributes.
 			//		So when you mouse over a bar, it still
