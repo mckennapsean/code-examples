@@ -44,16 +44,16 @@ Program List
 Compiling & Running Code
 ------------------------
 
-download the [Processing v.3.0 IDE](http://processing.org/) 
+Download the [Processing v.3.0 IDE](http://processing.org/).
 
-just copy and paste the examples in to the IDE to run
+Just copy and paste the examples in to the IDE to run/.
 
-several examples may need additional classses or data as well
+Several examples may need additional classses or data as well, so create a new folder for them and bring all examples together to run.
 
 Credit
 ------
 
-**Miriah Meyer** and **Ben Fry** for inspiring *Interpolator.pde*
-**Ben Fry** for inspiring *FloatTable.pde* & *timeSeries.pde*
-**Casey Reas** and **Ben Fry** for most of the *Tutorials*
-**John Resig** for inspiring *snake.pde*
+**Miriah Meyer** and **Ben Fry** for inspiring *Interpolator.pde*.
+**Ben Fry** for inspiring *FloatTable.pde* & *timeSeries.pde*.
+**Casey Reas** and **Ben Fry** for most of the *Tutorials*.
+**John Resig** for inspiring *snake.pde*.
