@@ -4,12 +4,12 @@ Python - Examples
 Program List
 ------------
 
-[*Algorithms*](/Python/Algorithms/)
+*Algorithms*
 
 -  **kMeansCluster**.py
     - run k-means algorithm on TSV data file
 
-[*Graphics*](/Python/Graphics/)
+*Graphics*
 
 -  **imageConversion**.py
     - takes in many images as input, converting them based on CSV data
@@ -18,7 +18,7 @@ Program List
 -  **tree**.py
     - generate a network diagram (tree)
 
-[*System*](/Python/System/)
+*System*
 
 -  **csvToDatabase**.py
     - convert from several CSV to STScI database input files
@@ -30,6 +30,6 @@ Program List
 Compiling & Running Code
 ------------------------
 
-these examples are not stand-alone, since no data is provided to run the actual script
+These examples are not stand-alone, since no data is provided to run the actual script.
 
-you can try to run them using the command-line version of Python, adjusting as needed for your data
+You can try to run them using the command-line version of Python, adjusting as needed for your data.
