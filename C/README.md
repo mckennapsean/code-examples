@@ -45,7 +45,7 @@ Program List
 Compiling & Running Code
 ------------------------
 
-For Linux, you can use the provided bash script
+For Linux, you can use the provided bash script:
 >  e.g. for program: **caesarCipher.c**
 
 > >  ./run **caesarCipher**
@@ -53,4 +53,4 @@ For Linux, you can use the provided bash script
 Credit
 ------
 
-**Leon Tabak** for inspiring *binarySearchTree.c*, *stack.c*, & *macros.c*
+**Leon Tabak** for inspiring *binarySearchTree.c*, *stack.c*, & *macros.c*.

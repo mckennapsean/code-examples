@@ -39,11 +39,11 @@ Program List
 Compiling & Running Code
 ------------------------
 
-simply open the HTML files in a web browser
+Open the HTML files in a web browser.
 
-loading files in D3 will require running a web server
+Loading files in D3 (e.g. data) will require running a web server in some browsers.
 
 Credit
 ------
 
-the cheat sheet and tutorials provided from the *Introduction to Data Visualization on the Web with D3.js* workshop at IEEE VIS 2012 by **Jerome Cukier**, **Jeff Heer**, & **Scott Murray** and updated to d3v4 by **Sean McKenna**
+The cheat sheet and tutorials provided from the *Introduction to Data Visualization on the Web with D3.js* workshop at IEEE VIS 2012 by **Jerome Cukier**, **Jeff Heer**, & **Scott Murray** and updated to d3v4 by **Sean McKenna**.
