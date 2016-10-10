@@ -1,0 +1,66 @@
+% general sample of a resume
+% works with the resume document class (resume.cls)
+
+%%% DOCUMENT TYPE
+\documentclass[margin]{resume}
+\textwidth=5.2in
+
+%%% TITLE INFO
+\begin{document} 
+\name{\Large{Sean P. McKenna}\\[12pt]}
+
+%%% CONTACT INFORMATION
+\address{EMAIL ADDRESS \\ PHONE \#}
+\address{HOME ADDRESS \\ CITY, STATE ZIP}
+
+%%% BEGIN RESUME
+\begin{resume}
+
+
+%%% OBJECTIVE (dependent on your goals)
+\section{Objective}
+  To get a job
+
+
+%%% EDUCATION
+\section{Education}
+{\bf COLLEGE,} CITY, STATE \\
+  B.A. in Something \\
+  Graduate Someday\\
+  GPA: 4.00
+
+
+%%% EXPERIENCE
+\section{Experience}
+
+{\bf Some Job,} Some Where \hfill 01/12 - 12/12
+\begin{itemize} \itemsep -2pt
+  \item what did you do?
+  \item how did you do it?
+  \item why was this job important?
+\end{itemize}
+
+
+%%% ACTIVITIES
+\section{Activities}
+{\bf Member,} Some Group, Location \hfill Spring 2012 - Winter 2012 \\
+{\bf Member,} Another Group, Another Location \hfill Spring 2012 - Present
+
+
+%%% ACADEMIC HONORS
+\section{Academic \\ Honors}
+Some Award: From Some Place \\
+Another Award: From Another Place
+
+
+%%% COMPUTER SKILLS
+\section{Computer \\ Skills}
+\begin{tabular}{l p{3in}}
+  \underline{Operating Systems:} & Windows, Mac, Linux \\ \\
+  \underline{Languages:} & \LaTeX \\ \\
+  \underline{Software:} & Microsoft Office, LibreOffice, Google Drive \\
+\end{tabular}
+
+
+\end{resume}
+\end{document}

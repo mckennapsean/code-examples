@@ -4,12 +4,12 @@ LaTeX - Examples
 Program List
 ------------
 
-[*Bibliography*](/LaTeX/Bibliography/)
+*Bibliography*
 
 -  **bibliography**.bib
     - includes one of each common type of reference
 
-[*Documents*](/LaTeX/Documents/)
+*Documents*
 
 -  **notebook**.tex
     - a document compiled from smaller ones (like a notebook or journal)
@@ -21,9 +21,8 @@ Program List
     - general sample of a report (not a two-column layout)
 -  **resume**.tex
     - general sample of a resume
-    - style by **Michael DeCorte** (*resume.cls*)
 
-[*Language*](/LaTeX/Language/)
+*Language*
 
 -  **commands**.tex
     - collection of some useful commands for LaTeX files
@@ -37,16 +36,14 @@ Program List
 Compiling & Running Code
 ------------------------
 
-some samples are not meant to be compiled alone, and these samples are marked as such
+Some code examples are not meant to be compiled alone but with additional files, and these examples have been marked.
 
-for Linux, you can use the provided bash script
+For Linux, you can use the provided bash script:
 >  e.g. for document: **resume.tex**
 
-> >  cd **Resume/**
-
-> > ./../run **resume**
+> > ./run **resume**
 
 Credit
 ------
 
-resume style by **Michael DeCorte**
+Resume style by **Michael DeCorte**.

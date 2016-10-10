@@ -1,0 +1,103 @@
+% general sample of a two-column paper
+
+%%% DOCUMENT TYPE
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+%%% PAGE DIMENSIONS
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\geometry{a4paper}
+
+%%% PACKAGES
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{lscape}
+\setlength{\columnsep}{24pt}
+\usepackage[sort,compress,comma,super]{natbib}
+
+%%% CUSTOM COMMANDS
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% TITLE INFO
+\title{Sample Title}
+\author{Sean McKenna}
+\date{\today}
+
+%%% MULTICOL TABLE & FIGURE SUPPORT
+\begin{document}
+\makeatletter
+\newenvironment{ctable}{\def\@captype{table}}{}
+\newenvironment{cfigure}{\def\@captype{figure}}{}
+\makeatother
+
+%%% BEGIN PAPER
+\maketitle
+
+\begin{multicols}{2}
+	
+
+
+\section{\textbf{Introduction}}
+Insightful and interesting introduction goes here!
+
+
+
+\section{\textbf{Background}}
+  \subsection{Topic One}
+  Explain your first topic.
+  
+  \subsection{Topic Two}
+  Explain your second topic.
+  
+  \subsection{Topic Three}
+  Explain your third topic.
+
+
+
+\section{\textbf{Experiment}}
+  \subsection{Part One}
+  Explain part one.
+  
+  \subsection{Part Two}
+  Explain part two.
+
+  \subsection{Part Three}
+  Explain part three.
+
+
+
+\section{\textbf{Analysis}}
+  \subsection{Part One}
+  Explain part one.
+
+  \subsection{Part Two}
+  Explain part two.
+  
+  \subsection{Part Three}
+  Explain part three.
+
+
+
+\section{\textbf{Conclusion}}
+Always end with a witty, inspiring, and concise conclusion.
+
+
+
+\raggedright
+\bibliographystyle{apalike}
+\bibliography{sources}
+
+\end{multicols}
+\end{document}
