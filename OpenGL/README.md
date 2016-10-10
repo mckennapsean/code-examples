@@ -4,25 +4,25 @@ OpenGL - Examples
 Program List
 ------------
 
-[*Language*](/OpenGL/Language/)
+*Language*
 
 -  **motion**.c
     - a constantly moving rectangle
 -  **triangle**.c
     - a simple triangle blending colors across each of the points
 
-[*Shaders*](/OpenGL/Shaders/)
+*Shaders*
 
 -  **shaders**.c
     - how to set up a shader in OpenGL (C)
     - includes sample shaders: base, gouraud, phong, texture-g, texture-p, & toon
 
-[*System*](/OpenGL/System/)
+*System*
 
 -  **gui**.c
     - a GUI using OpenGL with GLUT and GLUI
 
-[*Tutorials*](/OpenGL/Tutorials/)
+*Tutorials*
 
 -  **double**.c
     - simple square with mouse interactions
@@ -40,14 +40,12 @@ Program List
 Compiling & Running Code
 ------------------------
 
-all programs use C, OpenGL, GLUT, and GLUI
+All programs use C, OpenGL, GLUT, and GLUI.
 
-for Linux, you can use the provided bash script
+For Linux, you can use the provided bash script:
 >  e.g. for program: **triangle.c**
 
-> >  cd **Language/**
-
-> >  ./../run **triangle**
+> >  ./run **triangle**
 
 for Windows (using Cygwin), you can use the following commands
 >  gcc -o FILE.exe FILE.c -lgl -lglu -lglut -lopengl32
@@ -63,4 +61,4 @@ for Mac, you can use the following commands
 Credit
 ------
 
-OpenGL Redbook for inspiring all of the *Tutorials/*
+OpenGL Redbook for inspiring all of the *Tutorials*.
