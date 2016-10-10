@@ -6,6 +6,8 @@ This catalogue spans an assortment of programming languages, including sample co
 Programming Languages
 ---------------------
 
+All code examples are in a folder corresponding to the programming language.
+
 -  [C](/C/)
 -  [D3](/D3/)
 -  [Java](/Java/)
@@ -15,23 +17,21 @@ Programming Languages
 -  [Processing](/Processing/)
 -  [Python](/Python/)
 -  [Ruby](/Ruby/)
--  [SQL](/SQL/)
 -  [Scala](/Scala/)
 -  [Scheme](/Scheme/)
+-  [SQL](/SQL/)
 
-Folder Structure
-----------------
+Purpose of the Examples
+-----------------------
 
-Each programming language has a folder. Check each folder to learn how to run or compile the sample code.
+The goal of this catalogue is to provide a set of examples of how to implement and write code in a variety of languages. Think of it as inspiration, showcasing  how to run certain algorithms or complete certain objectives. They can serve as snippets of code for a programmer to refresh on how to use parts of a language or how best to structure their code given a language's features.
 
-For each programming language, any borrowed code is identified.
+Adding Code Examples
+--------------------
 
-Adding Sample Code
-------------------
+Additional examples may be added to this repository over time.
 
-Additional sample code will be added to this collection over time. It is a work-in-progress.
-
-If you have anything you would like to add, feel free to fork and send a pull request. Credit will be given where credit is due.
+But if you have anything you would like to add, feel free to either make an issue or fork and send a pull request! Credit will be given. :smiley:
 
 Credit
 ------
