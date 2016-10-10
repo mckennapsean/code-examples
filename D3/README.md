@@ -4,12 +4,7 @@ D3 - Examples
 Program List
 ------------
 
-[*Resources*](/D3/Resources/)
-
--  **d3 Cheat Sheet**.pdf
-    - tips on using d3 with CSS & SVG
-
-[*Tutorials*](/D3/Tutorials/)
+[*Tutorials*](/D3/)
 
 -  **index**.html
     - main page for all tutorials
