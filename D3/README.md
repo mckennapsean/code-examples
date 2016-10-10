@@ -51,4 +51,4 @@ loading files in D3 will require running a web server
 Credit
 ------
 
-the cheat sheet and tutorials provided from the *Introduction to Data Visualization on the Web with D3.js* workshop at VisWeek 2012 by **Jerome Cukier**, **Jeff Heer**, & **Scott Murray**
+the cheat sheet and tutorials provided from the *Introduction to Data Visualization on the Web with D3.js* workshop at IEEE VIS 2012 by **Jerome Cukier**, **Jeff Heer**, & **Scott Murray** and updated to d3v4 by **Sean McKenna**
