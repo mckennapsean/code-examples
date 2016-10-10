@@ -4,7 +4,7 @@ SQL - Examples
 Program List
 ------------
 
-[*Language*](/SQL/Language/)
+*Language*
 
 -  **samples**.sql
     - collection of various SQL queries, used in PHP code
@@ -12,11 +12,11 @@ Program List
 Compiling & Running Code
 ------------------------
 
-these are just examples and not meant to be run
+These are just example snippets and not meant to be run as-is.
 
-just copy-and-paste and edit as you need for your own purpose
+Just copy-and-paste and edit as you need for your own data and purpose.
 
 Credit
 ------
 
-**David Adrian** & **Nancy Decker** for the queries behind *Language/samples.sql*
+**David Adrian** & **Nancy Decker** for the queries behind *samples.sql*.

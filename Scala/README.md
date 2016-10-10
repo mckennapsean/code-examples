@@ -4,7 +4,7 @@ Scala - Examples
 Program List
 ------------
 
-[*Language*](/Scala/Language/)
+*Language*
 
 -  **CreatePoly**.scala
     - create a polyhedron that is sub-divided a set amount of times
@@ -17,9 +17,7 @@ Program List
 Compiling & Running Code
 ------------------------
 
-for Linux, you can use the provided bash script
+For Linux, you can use the provided bash script:
 >  e.g. for program: **ForLoop.scala**
 
-> >  cd **Language/**
-
-> >  ./../run **ForLoop**
+> >  ./run **ForLoop**

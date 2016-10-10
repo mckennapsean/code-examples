@@ -4,17 +4,17 @@ Scheme - Examples
 Program List
 ------------
 
-[*Algorithms*](/Scheme/Algorithms)
+*Algorithms*
 
 -  **harmonic**.scm
     - implementation of generating a harmonic series
 
-[*Data Structures*](/Scheme/DataStructures)
+*Data Structures*
 
 -  **rational**.scm
     - implementation of a rational number data structure
 
-[*Language*](/Scheme/Language)
+*Language*
 
 -  **functions**.scm
     - generating custom functions
@@ -26,4 +26,4 @@ Program List
 Compiling & Running Code
 ------------------------
 
-download DrRacket to run programs in Scheme
+Download DrRacket to run programs in Scheme.

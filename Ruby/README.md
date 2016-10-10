@@ -21,7 +21,7 @@ Program List
 Compiling & Running Code
 ------------------------
 
-run them using the command-line version of Ruby
+Run examples using the Ruby command:
 >  e.g. for program: **hello.rb**
 
 > >  ruby **hello.rb**
