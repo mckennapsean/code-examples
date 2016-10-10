@@ -4,26 +4,24 @@ Processing - Examples
 Program List
 ------------
 
-[*Graphics*](/Processing/Graphics/)
+*Graphics*
 
 -  **checkers**.pde
     - generates a chess/checkers board with alternating colors based on mouse position
--  **manyPoints**.pde
-    - use OpenGL to display many points on the screen
 -  **simple**.pde
     - some simple drawing & line effects
 
-[*Language*](/Processing/Language/)
+*Language*
 
 -  **Interpolator**.pde
     - interpolates between values for animation-effects
 
-[*System*](/Processing/System/)
+*System*
 
 -  **FloatTable**.pde
     - stores data file in a simple table of floats
 
-[*Tutorials*](/Processing/Tutorials/)
+*Tutorials*
 
 -  **brush**.pde
     - cool paint-brush effect on the canvas
@@ -36,24 +34,26 @@ Program List
 -  **snake**.pde
     - interactive snake cursor exploring a canvas image
 
-[*Visualization*](/Processing/Visualization/)
+*Visualization*
 
 -  **parallelCoordinates**.pde
-    - displays a data set using parallel coordinates
+    - displays a data set using parallel coordinates using FloatTable
 -  **timeSeries**.pde
-    - displays some time-series data using a simple line chart
+    - displays some time-series data using a simple line chart using FloatTable and Interpolator
 
 Compiling & Running Code
 ------------------------
 
-download the [Processing v.2.0 IDE](http://processing.org/) 
+download the [Processing v.3.0 IDE](http://processing.org/) 
 
 just copy and paste the examples in to the IDE to run
+
+several examples may need additional classses or data as well
 
 Credit
 ------
 
-**Miriah Meyer** and **Ben Fry** for inspiring *Language/Interpolator.pde*
-**Ben Fry** for inspiring *System/FloatTable.pde* & *Visualization/timeSeries.pde*
-**Casey Reas** and **Ben Fry** for most of the *Tutorials/*
-**John Resig** for inspiring *Tutorials/snake.pde*
+**Miriah Meyer** and **Ben Fry** for inspiring *Interpolator.pde*
+**Ben Fry** for inspiring *FloatTable.pde* & *timeSeries.pde*
+**Casey Reas** and **Ben Fry** for most of the *Tutorials*
+**John Resig** for inspiring *snake.pde*

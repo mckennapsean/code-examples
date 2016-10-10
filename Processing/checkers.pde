@@ -23,9 +23,7 @@ import java.awt.Rectangle;
 int rows = 8;
 int columns = 8;
 
-// size of screen
-int h = 300;
-int w = 300;
+// size of screen - must be specified in size command (w x h)
 
 // colors for the grid squares
 int whiteColorR = 255;
@@ -61,7 +59,7 @@ int blackSquareColors[][] = new int[cells][3];
 
 void setup(){
   background(backgroundColor);
-  size(w, h);
+  size(300, 300);
   if(anti_aliasing)
     smooth();
   frameRate(frame_rate);
