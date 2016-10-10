@@ -4,7 +4,7 @@ Java - Examples
 Program List
 ------------
 
-[*Algorithms*](/Java/Algorithms/)
+*Algorithms*
 
 -  **Ananagrams**.java
     - calculate ananagrams from file input
@@ -23,14 +23,14 @@ Program List
 -  **Searching**.java
     - implementation of several search algorithms
 
-[*Data Structures*](/Java/DataStructures/)
+*Data Structures*
 
 -  **Date**.java
     - format the input of a string to a date format, using Java objects and exceptions
 -  **DaytimeProtocolClient**.java
     - grab the date from the internet
 
-[*Graphics*](/Java/Graphics/)
+*Graphics*
 
 -  **CityScape**.java
     - cute 2D changing city environment
@@ -50,7 +50,7 @@ Program List
 -  **Torus**.java
     - several rotating 3D toruses inside of each other, requires Java 3D
 
-[*Language*](/Java/Language/)
+*Language*
 
 -  **DNA**.java
     - GUI for coding DNA or translating to RNA
@@ -63,7 +63,7 @@ Program List
 -  **Nbits**.java
     - calculates how many N bits exist in two's complement
 
-[*System*](/Java/System/)
+*System*
 
 -  **ImageReadWrite**.java
     - input an image into Java
@@ -77,22 +77,22 @@ Program List
 Compiling & Running Code
 ------------------------
 
-for Linux, you can use the provided bash script
+For Linux, you can use the provided bash script:
 >  e.g. for program: **Fractals.java**
 
-> >  cd **Graphics/Fractals/**
+> >  cd **Fractals/**
 
-> >  ./../../run **Fractals**
+> >  ./../run **Fractals**
 
-please note that some programs require Java 3D
+Please note that some programs require Java 3D.
 
 Credit
 ------
 
-**Leon Tabak** for inspiring most of the sample files here
+**Leon Tabak** for inspiring most of the sample files here.
 
-**Tony deLaubenfels** for inspiring *System/UDPPingServer.java*
+**Tony deLaubenfels** for inspiring *UDPPingServer.java*.
 
-**Adam Reed** for assisting with *Algorithms/Ananagrams.java*
+**Adam Reed** for assisting with *Ananagrams.java*.
 
-JHAVE project for the backbone of *Graphics/Clipping*
+JHAVE project for the backbone of *Clipping/*.
