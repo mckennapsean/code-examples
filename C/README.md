@@ -4,12 +4,12 @@ C - Examples
 Program List
 ------------
 
-[*Algorithms*](/C/Algorithms/)
+*Algorithms*
 
 -  **caesarCipher**.c
     - encode or decode from a text file
 
-[*Data Structures*](/C/DataStructures/)
+*Data Structures*
 
 -  **binarySearchTree**.c
     - binary search tree implementation
@@ -18,11 +18,11 @@ Program List
 -  **stack**.c
     - stack implementation
 
-[*Graphics*](/OpenGL/)
+*Graphics*
 
 -  check the [**OpenGL** folder](/OpenGL/) for graphics samples in C
 
-[*Language*](/C/Language/)
+*Language*
 
 -  **circle**.c
     - output points along a unit circle
@@ -35,7 +35,7 @@ Program List
 -  **pointer**.c
     - test C pointers
 
-[*System*](/C/System/)
+*System*
 
 -  **fileIO**.c
     - read from file
@@ -45,14 +45,12 @@ Program List
 Compiling & Running Code
 ------------------------
 
-for Linux, you can use the provided bash script
+For Linux, you can use the provided bash script
 >  e.g. for program: **caesarCipher.c**
 
-> >  cd **Algorithms**
-
-> >  ./../run **caesarCipher**
+> >  ./run **caesarCipher**
 
 Credit
 ------
 
-**Leon Tabak** for inspiring *DataStructures/binarySearchTree.c*, *DataStructures/stack.c*, & *Language/macros.c*
+**Leon Tabak** for inspiring *binarySearchTree.c*, *stack.c*, & *macros.c*
