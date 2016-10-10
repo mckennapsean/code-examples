@@ -205,9 +205,9 @@ min = round(elapsed / 60, 3)
 
 # display important info
 if iter == 1:
-  print "There was " + str(iter) + " error."
+  print("There was " + str(iter) + " error.")
 elif iter == 0:
-  print "There were no errors!"
+  print("There were no errors!")
 else:
-  print "There were " + str(iter) + " errors."
-print "CSV conversion operation complete after", min, "minutes."
+  print("There were " + str(iter) + " errors.")
+print("CSV conversion operation complete after", min, "minutes.")

@@ -31,4 +31,4 @@ input.close()
 output.close()
 
 # output success
-print "Search array generation complete!"
+print("Search array generation complete!")

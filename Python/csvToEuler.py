@@ -103,19 +103,19 @@ min = round(elapsed / 60, 3)
 
 # display redundancies (if any)
 if iter == 1:
-  print "There was " + str(iter) + " redundancy."
+  print("There was " + str(iter) + " redundancy.")
 elif iter == 0:
-  print "There were no redundancies!"
+  print("There were no redundancies!")
 else:
-  print "There were " + str(iter) + " redundancies."
+  print("There were " + str(iter) + " redundancies.")
 
 # display gene label counts
-print "There are " + str(oneLabel) + " genes with one label."
-print "There are " + str(twoLabels) + " genes with two labels."
-print "There are " + str(threeLabels) + " genes with three labels."
-print "There are " + str(fourLabels) + " genes with four labels."
-print "There are " + str(fiveLabels) + " genes with five labels."
-print "There are " + str(additionalLabels) + " genes with additional labels."
+print("There are " + str(oneLabel) + " genes with one label.")
+print("There are " + str(twoLabels) + " genes with two labels.")
+print("There are " + str(threeLabels) + " genes with three labels.")
+print("There are " + str(fourLabels) + " genes with four labels.")
+print("There are " + str(fiveLabels) + " genes with five labels.")
+print("There are " + str(additionalLabels) + " genes with additional labels.")
 
 # display time taken
-print "CSV scanning operation complete after", min, "minutes."
+print("CSV scanning operation complete after", min, "minutes.")

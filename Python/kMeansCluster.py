@@ -89,4 +89,4 @@ elapsed = end - start
 min = round(elapsed / 60, 3)
 
 # display time taken
-print "k-means clustering algorithm complete after", min, "minutes."
+print("k-means clustering algorithm complete after", min, "minutes.")

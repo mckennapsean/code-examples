@@ -64,4 +64,4 @@ for diam in diams:
 try:
   img.save(outFile, "PNG")
 except IOError:
-  print "Cannot save the overlay: " + str(Id) + ".png <br />"
+  print("Cannot save the overlay: " + str(Id) + ".png <br />")

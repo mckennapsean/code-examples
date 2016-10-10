@@ -19,14 +19,14 @@ for infile in sys.argv[1:]:
   input = os.path.splitext(infile)[0]
   inputVars = input.split('_')
   img = Image.open(infile).convert("RGBA")
-  #print "Opening file: " + infile
+  #print("Opening file: " + infile)
 
   # use the input filename to grab the epoch data
   expStart = inputVars[1]
   expStart = list(expStart)
   expStart.insert(5, '.')
   expStart = ''.join(expStart)
-  #print "Unique Identifier Found: " + expStart
+  #print("Unique Identifier Found: " + expStart)
 
   # get the arcsecond scale info
   finderArcs = float(inputVars[2])
@@ -51,7 +51,7 @@ for infile in sys.argv[1:]:
 
         # generate the output filename, uniquely identified by rootname/dataset
         outfile = row[0] + ".png"
-        #print "Now generating output file: " + outfile
+        #print("Now generating output file: " + outfile)
 
         # amount of degrees to rotate image
         orientat = row[33]
@@ -91,8 +91,8 @@ for infile in sys.argv[1:]:
     try:
       img.save(outfile)
     except IOError:
-      print "Cannot convert: " + infile
+      print("Cannot convert: " + infile)
       iter += -1
 
 # output success
-print "You have successfully converted " + str(iter) + " files."
+print("You have successfully converted " + str(iter) + " files.")

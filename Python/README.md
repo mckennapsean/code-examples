@@ -30,6 +30,6 @@ Program List
 Compiling & Running Code
 ------------------------
 
-These examples are not stand-alone, since no data is provided to run the actual script.
+Download Python v3 and run the scripts using the Python command.
 
-You can try to run them using the command-line version of Python, adjusting as needed for your data.
+These examples are not stand-alone, since no data is provided to run the actual script. Feel free to adjust them as needed for your data.
